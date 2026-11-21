@@ -35,6 +35,63 @@ Copy this folder, or extract `OpsBeacon-Live-Portable.zip`, to a writable folder
 The archive excludes this laptop's reports, event data, jobs and runtime logs. Generate a fresh archive with `Build-Portable.ps1`. The working folder retains assessment data under `reports/` and `jobs/`; treat exported reports and copied working folders as operational data.
 
 
+## Local opt-in Authenticode build
+
+Build with Windows PowerShell 5.1. The default remains unsigned. To sign, pass an
+explicit 40-character thumbprint for a currently valid Code Signing certificate
+with a private key in `Cert:\CurrentUser\My`:
+
+```powershell
+# Unsigned (existing behavior):
+.\Build-Portable.ps1
+# Signed local test; replace with the intended certificate thumbprint:
+.\Build-Portable.ps1 -CertificateThumbprint 'YOUR_40_CHARACTER_CERTIFICATE_THUMBPRINT'
+```
+
+Signing uses SHA-256 on the final staged first-party `.ps1`, `.psm1`, and `.psd1`
+files, including launchers, build script, tests and server configuration, before
+ZIP creation. Source files stay unsigned. Vendor files and their existing
+signatures are copied unchanged. Pode 2.13.4 is bundled for offline startup; no
+module installation or internet download is needed. Windows PowerShell 5.1,
+.NET Framework 4.7.2 or newer, and Windows CIM/event-log support are prerequisites.
+Worker dispatch removes signature footers only from the temporary text used to
+compose its local/remoting script block; packaged signatures remain intact.
+
+Staging uses a fresh folder outside the repository. The build returns its path,
+the ZIP path and SHA-256. Its `staged-hashes.json` manifest stays outside the ZIP.
+The previous ZIP is replaced only after staging, signing and compression succeed.
+Local tasks, jobs, reports, logs, runtime data and certificate/key exports are
+excluded. Certificates are never created by builds, startup or module imports.
+
+For an explicitly authorized local test only, if no suitable certificate exists,
+create it once outside the application:
+
+```powershell
+$cert = New-SelfSignedCertificate -Type CodeSigning -Subject 'CN=MyCodeSigning' -CertStoreLocation 'Cert:\CurrentUser\My' -HashAlgorithm SHA256
+.\Build-Portable.ps1 -CertificateThumbprint $cert.Thumbprint
+```
+
+A self-signed ZIP is for local testing and is not a production trusted release.
+An untrusted root may appear as `UnknownError` or `NotTrusted` even though the
+signature is present. The build discloses that condition; it never changes
+execution policies, trusted roots or trusted publishers. The existing CMD
+launchers use a process-level `-ExecutionPolicy Bypass`, so successful CMD startup
+does not demonstrate enforcement of trusted signatures. Validate that separately
+using an already configured Windows test account and its normal policy.
+
+Extract into a new writable directory, then verify all packaged file hashes,
+first-party signer thumbprints, SHA-256 CMS signatures and unchanged vendor bytes:
+
+```powershell
+$build = .\Build-Portable.ps1 -CertificateThumbprint $cert.Thumbprint
+Expand-Archive -LiteralPath $build.ZipPath -DestinationPath 'C:\Tests\OpsBeacon-fresh'
+.\tests\Portable-Checks.ps1 -StagingDirectory $build.StagingDirectory -ExtractedRoot 'C:\Tests\OpsBeacon-fresh\OpsBeacon-Live' -CertificateThumbprint $build.CertificateThumbprint
+```
+
+Run existing tests and launch/stop smoke checks from the extracted deployment.
+Keep verification results outside the archive. Staging is retained for review;
+remove your own staging folder after verification if no longer needed.
+
 ## Assessments
 
 Select a server profile to choose recommended checks, then adjust the optional capabilities for the inspected server:

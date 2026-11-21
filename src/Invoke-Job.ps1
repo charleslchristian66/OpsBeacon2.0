@@ -8,8 +8,13 @@ try{
     $request=Get-Content -LiteralPath (Join-Path $folder "$Id.request.json") -Raw -Encoding UTF8 | ConvertFrom-Json
     Write-BeaconJobStatus -Path $statusPath -Value @{id=$Id;action=$request.action;target=$request.options.target;state='Running';submittedAt=$submittedAt;startedAt=$startedAt;completedAt=$null;pid=$PID}
     $general=Get-Content -LiteralPath (Join-Path $PSScriptRoot 'LocalCollector.psm1') -Raw -Encoding UTF8
+    # These files are composed into one local/remoting script block. Signature
+    # footers belong to each original file, not the generated in-memory script.
+    # Keep the signed files on disk intact and remove only their trailing footer.
+    $general=$general -replace '(?ms)^# SIG # Begin signature block\r?\n.*?^# SIG # End signature block\s*\z',''
     $general=$general -replace '(?m)^Export-ModuleMember.*$',''
     $worker=Get-Content -LiteralPath (Join-Path $PSScriptRoot 'TargetWorker.ps1') -Raw -Encoding UTF8
+    $worker=$worker -replace '(?ms)^# SIG # Begin signature block\r?\n.*?^# SIG # End signature block\s*\z',''
     $worker=$worker -replace '^param\(\$Request\)\s*',''
     $block=[scriptblock]::Create("param(`$Request)`n$general`n$worker")
     if($request.options.execution -eq 'local'){
