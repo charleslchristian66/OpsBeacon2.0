@@ -1,0 +1,62 @@
+{
+    "action":  "events",
+    "events":  {
+                   "searchHours":  24,
+                   "beforeHours":  2,
+                   "afterHours":  2,
+                   "maxEvents":  5000,
+                   "summaryLimit":  20000
+               },
+    "rules":  {
+                  "observationMinutes":  15,
+                  "cpuWarning":  80,
+                  "cpuCritical":  95,
+                  "memoryWarning":  85,
+                  "memoryCritical":  95,
+                  "osAvailableWarningGB":  4,
+                  "osAvailableCriticalGB":  2,
+                  "grantsWarning":  1,
+                  "grantsCritical":  5,
+                  "pressureMinutes":  5,
+                  "diskFreeWarning":  15,
+                  "diskFreeCritical":  5,
+                  "storageWarningMs":  20,
+                  "storageCriticalMs":  50
+              },
+    "destinations":  [
+
+                     ],
+    "connectivity":  {
+                         "probeCount":  4,
+                         "timeoutMs":  1000,
+                         "latencyThresholdMs":  170,
+                         "maxHops":  11,
+                         "maxConcurrent":  6,
+                         "destinationLimit":  20,
+                         "traceLimitSeconds":  15,
+                         "inspectionLimitSeconds":  60
+                     },
+    "options":  {
+                    "target":  "LAPTOP-03HO6PCU",
+                    "os":  "Windows",
+                    "profile":  "General Purpose",
+                    "sql":  false,
+                    "cluster":  false,
+                    "events":  false,
+                    "connectivity":  false,
+                    "execution":  "local",
+                    "sqlInstance":  "Auto",
+                    "observationSeconds":  5
+                },
+    "query":  {
+                  "eventId":  7023,
+                  "logs":  [
+                               "System"
+                           ],
+                  "provider":  "Service Control Manager",
+                  "start":  "2026-11-19T02:46:39.0959723Z",
+                  "end":  "2026-11-20T02:46:49.4942774Z",
+                  "maxEvents":  5000,
+                  "errorsOnly":  true
+              }
+}

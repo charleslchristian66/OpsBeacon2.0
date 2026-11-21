@@ -1,0 +1,2256 @@
+{
+    "startedAt":  "2026-11-20T03:06:39.2976848Z",
+    "options":  {
+                    "target":  "LAPTOP-03HO6PCU",
+                    "os":  "Windows",
+                    "profile":  "General Purpose Server",
+                    "sql":  false,
+                    "cluster":  false,
+                    "events":  true,
+                    "connectivity":  true,
+                    "execution":  "local",
+                    "sqlInstance":  "Auto",
+                    "observationSeconds":  900
+                },
+    "action":  "assess",
+    "id":  "1e9ba10d-c2da-45b6-a3c6-59d23b63e152",
+    "completedAt":  "2026-11-20T03:21:45.1759762Z",
+    "state":  "Completed",
+    "target":  "LAPTOP-03HO6PCU",
+    "pid":  5660,
+    "result":  {
+                   "Target":  "LAPTOP-03HO6PCU",
+                   "ExecutionSource":  "LAPTOP-03HO6PCU",
+                   "TargetTimeZone":  {
+                                          "id":  "Eastern Standard Time",
+                                          "displayName":  "(UTC-05:00) Eastern Time (US \u0026 Canada)",
+                                          "standardName":  "Eastern Standard Time",
+                                          "daylightName":  "Eastern Daylight Time",
+                                          "supportsDaylightSavingTime":  true,
+                                          "capturedAt":  "2026-11-20T03:21:44.9719927Z",
+                                          "source":  "LAPTOP-03HO6PCU",
+                                          "periods":  [
+                                                          {
+                                                              "startUtc":  "2025-01-01T00:00:00.0000000Z",
+                                                              "endUtc":  "2025-03-09T07:00:00.0000000Z",
+                                                              "offsetMinutes":  -300,
+                                                              "daylight":  false
+                                                          },
+                                                          {
+                                                              "startUtc":  "2025-03-09T07:00:00.0000000Z",
+                                                              "endUtc":  "2025-11-02T06:00:00.0000000Z",
+                                                              "offsetMinutes":  -240,
+                                                              "daylight":  true
+                                                          },
+                                                          {
+                                                              "startUtc":  "2025-11-02T06:00:00.0000000Z",
+                                                              "endUtc":  "2026-03-08T07:00:00.0000000Z",
+                                                              "offsetMinutes":  -300,
+                                                              "daylight":  false
+                                                          },
+                                                          {
+                                                              "startUtc":  "2026-03-08T07:00:00.0000000Z",
+                                                              "endUtc":  "2026-11-01T06:00:00.0000000Z",
+                                                              "offsetMinutes":  -240,
+                                                              "daylight":  true
+                                                          },
+                                                          {
+                                                              "startUtc":  "2026-11-01T06:00:00.0000000Z",
+                                                              "endUtc":  "2027-03-14T07:00:00.0000000Z",
+                                                              "offsetMinutes":  -300,
+                                                              "daylight":  false
+                                                          },
+                                                          {
+                                                              "startUtc":  "2027-03-14T07:00:00.0000000Z",
+                                                              "endUtc":  "2027-11-07T06:00:00.0000000Z",
+                                                              "offsetMinutes":  -240,
+                                                              "daylight":  true
+                                                          },
+                                                          {
+                                                              "startUtc":  "2027-11-07T06:00:00.0000000Z",
+                                                              "endUtc":  "2028-01-01T00:00:00.0000000Z",
+                                                              "offsetMinutes":  -300,
+                                                              "daylight":  false
+                                                          }
+                                                      ]
+                                      },
+                   "StartedAt":  "2026-11-20T03:06:39.5562920Z",
+                   "CompletedAt":  "2026-11-20T03:21:45.1602202Z",
+                   "Measurements":  {
+                                        "cpu":  38.52,
+                                        "memoryUsed":  86.57,
+                                        "availableGB":  0.46,
+                                        "totalMemoryGB":  3.42,
+                                        "diskFree":  12.94,
+                                        "diskTotalGB":  118.1,
+                                        "volumes":  [
+                                                        {
+                                                            "id":  "\\\\?\\Volume{7a4c1e19-9a0a-4fb6-b50b-4e5c7743fea2}\\",
+                                                            "mountPaths":  [
+                                                                               "C:\\"
+                                                                           ],
+                                                            "label":  "Windows",
+                                                            "fileSystem":  "NTFS",
+                                                            "driveType":  3,
+                                                            "totalBytes":  126804291584,
+                                                            "freeBytes":  16412930048,
+                                                            "usedBytes":  110391361536,
+                                                            "freePercent":  12.943513064877184,
+                                                            "error":  null
+                                                        },
+                                                        {
+                                                            "id":  "\\\\?\\Volume{2a6d4c2f-e3d0-11f1-a5e6-48e7da1efd7a}\\",
+                                                            "mountPaths":  [
+                                                                               "G:\\"
+                                                                           ],
+                                                            "label":  "Google Drive",
+                                                            "fileSystem":  "FAT32",
+                                                            "driveType":  3,
+                                                            "totalBytes":  107374182400,
+                                                            "freeBytes":  15592280064,
+                                                            "usedBytes":  91781902336,
+                                                            "freePercent":  14.521442413330078,
+                                                            "error":  null
+                                                        }
+                                                    ],
+                                        "volumeCapacityStatus":  "Collected",
+                                        "pendingReboot":  {
+                                                              "checkedAtUtc":  "2026-11-20T03:06:39.6517074Z",
+                                                              "pending":  false,
+                                                              "status":  "Healthy",
+                                                              "coverage":  "Collected",
+                                                              "reasons":  [
+
+                                                                          ],
+                                                              "indicators":  [
+                                                                                 {
+                                                                                     "name":  "Component Based Servicing",
+                                                                                     "registryPath":  "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Component Based Servicing\\RebootPending",
+                                                                                     "valueName":  null,
+                                                                                     "pending":  false,
+                                                                                     "status":  "Not detected",
+                                                                                     "error":  null
+                                                                                 },
+                                                                                 {
+                                                                                     "name":  "Windows Update",
+                                                                                     "registryPath":  "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\WindowsUpdate\\Auto Update\\RebootRequired",
+                                                                                     "valueName":  null,
+                                                                                     "pending":  false,
+                                                                                     "status":  "Not detected",
+                                                                                     "error":  null
+                                                                                 },
+                                                                                 {
+                                                                                     "name":  "Pending file rename operations",
+                                                                                     "registryPath":  "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Session Manager",
+                                                                                     "valueName":  "PendingFileRenameOperations",
+                                                                                     "pending":  false,
+                                                                                     "status":  "Not detected",
+                                                                                     "error":  null
+                                                                                 },
+                                                                                 {
+                                                                                     "name":  "Additional pending file rename operations",
+                                                                                     "registryPath":  "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Session Manager",
+                                                                                     "valueName":  "PendingFileRenameOperations2",
+                                                                                     "pending":  false,
+                                                                                     "status":  "Not detected",
+                                                                                     "error":  null
+                                                                                 }
+                                                                             ],
+                                                              "scope":  "Windows servicing, Windows Update and pending file rename registry indicators. Other products may use additional signals. File rename entries can remain stale; review the evidence before scheduling a restart."
+                                                          },
+                                        "storageMs":  0.488,
+                                        "sampledMinutes":  15.00413155,
+                                        "observationSeconds":  900.248,
+                                        "localSnapshot":  true,
+                                        "diskLabel":  "C:",
+                                        "sqlTotalMB":  null,
+                                        "sqlTargetMB":  null,
+                                        "grants":  null,
+                                        "pressureMinutes":  null,
+                                        "uptimeMinutes":  null
+                                    },
+                   "Samples":  [
+                                   {
+                                       "timestamp":  "2026-11-20T03:06:41.8176577Z",
+                                       "cpuIdleTicks":  582204687500,
+                                       "cpuTimestamp":  1.3439617601684923E+17,
+                                       "diskTicks":  654395994,
+                                       "diskTransfers":  5782780,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  457008
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:06:46.9920292Z",
+                                       "cpuIdleTicks":  582253828125,
+                                       "cpuTimestamp":  1.3439617606884502E+17,
+                                       "diskTicks":  656025554,
+                                       "diskTransfers":  5782920,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  479188
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:06:52.1489633Z",
+                                       "cpuIdleTicks":  582301679687,
+                                       "cpuTimestamp":  1.3439617612053995E+17,
+                                       "diskTicks":  656279665,
+                                       "diskTransfers":  5782982,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  476796
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:06:57.2802927Z",
+                                       "cpuIdleTicks":  582347070312,
+                                       "cpuTimestamp":  1.3439617617174483E+17,
+                                       "diskTicks":  656583296,
+                                       "diskTransfers":  5783055,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  474876
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:07:02.3953045Z",
+                                       "cpuIdleTicks":  582391445312,
+                                       "cpuTimestamp":  1.3439617622299245E+17,
+                                       "diskTicks":  656900911,
+                                       "diskTransfers":  5783128,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  487560
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:07:07.5238150Z",
+                                       "cpuIdleTicks":  582436718750,
+                                       "cpuTimestamp":  1.3439617627428978E+17,
+                                       "diskTicks":  657336323,
+                                       "diskTransfers":  5783186,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  493472
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:07:12.6623682Z",
+                                       "cpuIdleTicks":  582484101562,
+                                       "cpuTimestamp":  1.3439617632543642E+17,
+                                       "diskTicks":  657708529,
+                                       "diskTransfers":  5783230,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  485332
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:07:17.8062974Z",
+                                       "cpuIdleTicks":  582530351562,
+                                       "cpuTimestamp":  1.3439617637695341E+17,
+                                       "diskTicks":  658017280,
+                                       "diskTransfers":  5783295,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  481312
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:07:22.9227583Z",
+                                       "cpuIdleTicks":  582578398437,
+                                       "cpuTimestamp":  1.3439617642829704E+17,
+                                       "diskTicks":  658319646,
+                                       "diskTransfers":  5783328,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  480444
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:07:28.0366922Z",
+                                       "cpuIdleTicks":  582622851562,
+                                       "cpuTimestamp":  1.3439617647940182E+17,
+                                       "diskTicks":  658804684,
+                                       "diskTransfers":  5783470,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  485412
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:07:34.5912854Z",
+                                       "cpuIdleTicks":  582630625000,
+                                       "cpuTimestamp":  1.3439617653396451E+17,
+                                       "diskTicks":  676366090,
+                                       "diskTransfers":  5786989,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  440724
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:07:39.8442958Z",
+                                       "cpuIdleTicks":  582641640625,
+                                       "cpuTimestamp":  1.343961765964045E+17,
+                                       "diskTicks":  710621087,
+                                       "diskTransfers":  5792867,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  471112
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:07:45.1201847Z",
+                                       "cpuIdleTicks":  582658203125,
+                                       "cpuTimestamp":  1.3439617664891362E+17,
+                                       "diskTicks":  724371179,
+                                       "diskTransfers":  5795606,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  593256
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:07:50.3220394Z",
+                                       "cpuIdleTicks":  582675000000,
+                                       "cpuTimestamp":  1.3439617670166691E+17,
+                                       "diskTicks":  731117358,
+                                       "diskTransfers":  5796700,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  504456
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:07:55.6146360Z",
+                                       "cpuIdleTicks":  582697617187,
+                                       "cpuTimestamp":  1.3439617675383746E+17,
+                                       "diskTicks":  733512414,
+                                       "diskTransfers":  5797393,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  509068
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:08:00.8677157Z",
+                                       "cpuIdleTicks":  582727070312,
+                                       "cpuTimestamp":  1.3439617680669266E+17,
+                                       "diskTicks":  745914680,
+                                       "diskTransfers":  5799253,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  487836
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:08:06.3727501Z",
+                                       "cpuIdleTicks":  582759218750,
+                                       "cpuTimestamp":  1.343961768599301E+17,
+                                       "diskTicks":  747265962,
+                                       "diskTransfers":  5799689,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  461228
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:08:11.6250529Z",
+                                       "cpuIdleTicks":  582787539062,
+                                       "cpuTimestamp":  1.3439617691432877E+17,
+                                       "diskTicks":  750016017,
+                                       "diskTransfers":  5800546,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  459284
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:08:16.8710187Z",
+                                       "cpuIdleTicks":  582815039062,
+                                       "cpuTimestamp":  1.34396176966739E+17,
+                                       "diskTicks":  757649356,
+                                       "diskTransfers":  5802579,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  481240
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:08:22.0564783Z",
+                                       "cpuIdleTicks":  582843203125,
+                                       "cpuTimestamp":  1.3439617701910686E+17,
+                                       "diskTicks":  767599742,
+                                       "diskTransfers":  5805053,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  474516
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:08:27.3205645Z",
+                                       "cpuIdleTicks":  582871054687,
+                                       "cpuTimestamp":  1.3439617707112085E+17,
+                                       "diskTicks":  773053994,
+                                       "diskTransfers":  5806022,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  481724
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:08:32.5297588Z",
+                                       "cpuIdleTicks":  582900664062,
+                                       "cpuTimestamp":  1.3439617712380466E+17,
+                                       "diskTicks":  774115103,
+                                       "diskTransfers":  5806293,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  502380
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:08:37.8205181Z",
+                                       "cpuIdleTicks":  582934414062,
+                                       "cpuTimestamp":  1.3439617717586333E+17,
+                                       "diskTicks":  775347511,
+                                       "diskTransfers":  5806666,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  531392
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:08:43.0854441Z",
+                                       "cpuIdleTicks":  582967578125,
+                                       "cpuTimestamp":  1.3439617722870533E+17,
+                                       "diskTicks":  776711375,
+                                       "diskTransfers":  5807003,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  496276
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:08:48.3483072Z",
+                                       "cpuIdleTicks":  582999218750,
+                                       "cpuTimestamp":  1.3439617728134979E+17,
+                                       "diskTicks":  777895910,
+                                       "diskTransfers":  5807364,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  485564
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:08:53.6065276Z",
+                                       "cpuIdleTicks":  583030937500,
+                                       "cpuTimestamp":  1.3439617733401856E+17,
+                                       "diskTicks":  778614696,
+                                       "diskTransfers":  5807584,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  493380
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:08:58.8495881Z",
+                                       "cpuIdleTicks":  583065312500,
+                                       "cpuTimestamp":  1.343961773865975E+17,
+                                       "diskTicks":  781854522,
+                                       "diskTransfers":  5808617,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  482496
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:09:04.0727582Z",
+                                       "cpuIdleTicks":  583094765625,
+                                       "cpuTimestamp":  1.3439617743899379E+17,
+                                       "diskTicks":  786824155,
+                                       "diskTransfers":  5809419,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  481692
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:09:09.3148284Z",
+                                       "cpuIdleTicks":  583124921875,
+                                       "cpuTimestamp":  1.3439617749126518E+17,
+                                       "diskTicks":  793290280,
+                                       "diskTransfers":  5810147,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  483284
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:09:14.5880904Z",
+                                       "cpuIdleTicks":  583156250000,
+                                       "cpuTimestamp":  1.3439617754372893E+17,
+                                       "diskTicks":  795252729,
+                                       "diskTransfers":  5810511,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  492488
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:09:19.7903431Z",
+                                       "cpuIdleTicks":  583188632812,
+                                       "cpuTimestamp":  1.3439617759624392E+17,
+                                       "diskTicks":  796577180,
+                                       "diskTransfers":  5810864,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  453468
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:09:25.4066947Z",
+                                       "cpuIdleTicks":  583209453125,
+                                       "cpuTimestamp":  1.3439617764932946E+17,
+                                       "diskTicks":  806372219,
+                                       "diskTransfers":  5813022,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  418488
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:09:30.6345878Z",
+                                       "cpuIdleTicks":  583224453125,
+                                       "cpuTimestamp":  1.3439617770468795E+17,
+                                       "diskTicks":  819994521,
+                                       "diskTransfers":  5815890,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  550824
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:09:35.9485862Z",
+                                       "cpuIdleTicks":  583246250000,
+                                       "cpuTimestamp":  1.3439617775694619E+17,
+                                       "diskTicks":  821558200,
+                                       "diskTransfers":  5816318,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  510056
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:09:41.2269684Z",
+                                       "cpuIdleTicks":  583277031250,
+                                       "cpuTimestamp":  1.3439617781005426E+17,
+                                       "diskTicks":  822405052,
+                                       "diskTransfers":  5816562,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  502080
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:09:46.4931995Z",
+                                       "cpuIdleTicks":  583310976562,
+                                       "cpuTimestamp":  1.3439617786291651E+17,
+                                       "diskTicks":  823924192,
+                                       "diskTransfers":  5817014,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  488648
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:09:51.7459705Z",
+                                       "cpuIdleTicks":  583338320312,
+                                       "cpuTimestamp":  1.343961779154105E+17,
+                                       "diskTicks":  827277488,
+                                       "diskTransfers":  5818065,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  512808
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:09:56.9961285Z",
+                                       "cpuIdleTicks":  583373437500,
+                                       "cpuTimestamp":  1.3439617796790357E+17,
+                                       "diskTicks":  827921133,
+                                       "diskTransfers":  5818168,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  504672
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:10:02.2392930Z",
+                                       "cpuIdleTicks":  583403437500,
+                                       "cpuTimestamp":  1.3439617802040654E+17,
+                                       "diskTicks":  838569485,
+                                       "diskTransfers":  5822063,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  414760
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:10:07.5201766Z",
+                                       "cpuIdleTicks":  583435273437,
+                                       "cpuTimestamp":  1.343961780729447E+17,
+                                       "diskTicks":  842922528,
+                                       "diskTransfers":  5823044,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  507532
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:10:12.7797494Z",
+                                       "cpuIdleTicks":  583470390625,
+                                       "cpuTimestamp":  1.3439617812573346E+17,
+                                       "diskTicks":  844122808,
+                                       "diskTransfers":  5823365,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  511184
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:10:18.0372331Z",
+                                       "cpuIdleTicks":  583505312500,
+                                       "cpuTimestamp":  1.3439617817833661E+17,
+                                       "diskTicks":  846025498,
+                                       "diskTransfers":  5823901,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  490616
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:10:23.2345644Z",
+                                       "cpuIdleTicks":  583535507812,
+                                       "cpuTimestamp":  1.3439617823075248E+17,
+                                       "diskTicks":  851819735,
+                                       "diskTransfers":  5825913,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  486080
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:10:28.4508711Z",
+                                       "cpuIdleTicks":  583563359375,
+                                       "cpuTimestamp":  1.3439617828278618E+17,
+                                       "diskTicks":  856425909,
+                                       "diskTransfers":  5827340,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  484408
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:10:33.7073053Z",
+                                       "cpuIdleTicks":  583596367187,
+                                       "cpuTimestamp":  1.3439617833511933E+17,
+                                       "diskTicks":  859047753,
+                                       "diskTransfers":  5828086,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  511488
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:10:38.9638319Z",
+                                       "cpuIdleTicks":  583630039062,
+                                       "cpuTimestamp":  1.3439617838758154E+17,
+                                       "diskTicks":  860341860,
+                                       "diskTransfers":  5828381,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  502404
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:10:44.2327691Z",
+                                       "cpuIdleTicks":  583660546875,
+                                       "cpuTimestamp":  1.3439617844017606E+17,
+                                       "diskTicks":  861285548,
+                                       "diskTransfers":  5828709,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  508460
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:10:49.4886643Z",
+                                       "cpuIdleTicks":  583693789062,
+                                       "cpuTimestamp":  1.3439617849277502E+17,
+                                       "diskTicks":  863283221,
+                                       "diskTransfers":  5829260,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  495520
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:10:54.7762813Z",
+                                       "cpuIdleTicks":  583730195312,
+                                       "cpuTimestamp":  1.3439617854548618E+17,
+                                       "diskTicks":  863809001,
+                                       "diskTransfers":  5829380,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  492080
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:11:00.0496043Z",
+                                       "cpuIdleTicks":  583763437500,
+                                       "cpuTimestamp":  1.3439617859831069E+17,
+                                       "diskTicks":  864609078,
+                                       "diskTransfers":  5829590,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  492284
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:11:05.2676786Z",
+                                       "cpuIdleTicks":  583797929687,
+                                       "cpuTimestamp":  1.3439617865097707E+17,
+                                       "diskTicks":  865472504,
+                                       "diskTransfers":  5829813,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  483328
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:11:10.5299397Z",
+                                       "cpuIdleTicks":  583833828125,
+                                       "cpuTimestamp":  1.3439617870314462E+17,
+                                       "diskTicks":  866087785,
+                                       "diskTransfers":  5829931,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  485816
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:11:15.7879267Z",
+                                       "cpuIdleTicks":  583866367187,
+                                       "cpuTimestamp":  1.3439617875578934E+17,
+                                       "diskTicks":  866666012,
+                                       "diskTransfers":  5830061,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  496600
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:11:21.0596400Z",
+                                       "cpuIdleTicks":  583902265625,
+                                       "cpuTimestamp":  1.3439617880858651E+17,
+                                       "diskTicks":  867260415,
+                                       "diskTransfers":  5830160,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  489972
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:11:26.2677217Z",
+                                       "cpuIdleTicks":  583933476562,
+                                       "cpuTimestamp":  1.3439617886103522E+17,
+                                       "diskTicks":  869944614,
+                                       "diskTransfers":  5830944,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  467128
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:11:31.5228753Z",
+                                       "cpuIdleTicks":  583963984375,
+                                       "cpuTimestamp":  1.3439617891322797E+17,
+                                       "diskTicks":  870672874,
+                                       "diskTransfers":  5831101,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  497612
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:11:36.8192310Z",
+                                       "cpuIdleTicks":  583998125000,
+                                       "cpuTimestamp":  1.3439617896574259E+17,
+                                       "diskTicks":  871193472,
+                                       "diskTransfers":  5831210,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  494424
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:11:42.0331069Z",
+                                       "cpuIdleTicks":  584027265625,
+                                       "cpuTimestamp":  1.3439617901884632E+17,
+                                       "diskTicks":  871957558,
+                                       "diskTransfers":  5831419,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  448992
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:11:47.2234883Z",
+                                       "cpuIdleTicks":  584058671875,
+                                       "cpuTimestamp":  1.3439617907071662E+17,
+                                       "diskTicks":  878823322,
+                                       "diskTransfers":  5832808,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  487912
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:11:52.4626752Z",
+                                       "cpuIdleTicks":  584089375000,
+                                       "cpuTimestamp":  1.3439617912271613E+17,
+                                       "diskTicks":  879790468,
+                                       "diskTransfers":  5833006,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  490188
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:11:57.7208040Z",
+                                       "cpuIdleTicks":  584124492187,
+                                       "cpuTimestamp":  1.3439617917526254E+17,
+                                       "diskTicks":  880799826,
+                                       "diskTransfers":  5833241,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  495836
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:12:02.9860767Z",
+                                       "cpuIdleTicks":  584154765625,
+                                       "cpuTimestamp":  1.3439617922775014E+17,
+                                       "diskTicks":  896331999,
+                                       "diskTransfers":  5837879,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  483980
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:12:08.2332376Z",
+                                       "cpuIdleTicks":  584187421875,
+                                       "cpuTimestamp":  1.343961792803365E+17,
+                                       "diskTicks":  902774984,
+                                       "diskTransfers":  5839854,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  519572
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:12:13.4696310Z",
+                                       "cpuIdleTicks":  584221796875,
+                                       "cpuTimestamp":  1.3439617933275925E+17,
+                                       "diskTicks":  904521929,
+                                       "diskTransfers":  5840335,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  499716
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:12:18.7518194Z",
+                                       "cpuIdleTicks":  584257773437,
+                                       "cpuTimestamp":  1.3439617938529582E+17,
+                                       "diskTicks":  906404030,
+                                       "diskTransfers":  5840900,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  486760
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:12:24.0240606Z",
+                                       "cpuIdleTicks":  584291210937,
+                                       "cpuTimestamp":  1.3439617943808584E+17,
+                                       "diskTicks":  907074132,
+                                       "diskTransfers":  5841057,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  508028
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:12:29.2714757Z",
+                                       "cpuIdleTicks":  584318437500,
+                                       "cpuTimestamp":  1.3439617949075822E+17,
+                                       "diskTicks":  918182731,
+                                       "diskTransfers":  5843064,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  489440
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:12:34.5354951Z",
+                                       "cpuIdleTicks":  584350390625,
+                                       "cpuTimestamp":  1.3439617954331915E+17,
+                                       "diskTicks":  919498920,
+                                       "diskTransfers":  5843353,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  491040
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:12:39.7989594Z",
+                                       "cpuIdleTicks":  584381953125,
+                                       "cpuTimestamp":  1.3439617959590952E+17,
+                                       "diskTicks":  921205179,
+                                       "diskTransfers":  5843859,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  490444
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:12:45.0355084Z",
+                                       "cpuIdleTicks":  584415234375,
+                                       "cpuTimestamp":  1.3439617964850392E+17,
+                                       "diskTicks":  921815342,
+                                       "diskTransfers":  5843991,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  486740
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:12:50.2875770Z",
+                                       "cpuIdleTicks":  584446210937,
+                                       "cpuTimestamp":  1.3439617970082362E+17,
+                                       "diskTicks":  925093893,
+                                       "diskTransfers":  5844887,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  489852
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:12:55.4956631Z",
+                                       "cpuIdleTicks":  584479414062,
+                                       "cpuTimestamp":  1.3439617975330582E+17,
+                                       "diskTicks":  925512551,
+                                       "diskTransfers":  5844969,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  487168
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:13:00.7453806Z",
+                                       "cpuIdleTicks":  584514687500,
+                                       "cpuTimestamp":  1.3439617980543253E+17,
+                                       "diskTicks":  926238711,
+                                       "diskTransfers":  5845081,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  482280
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:13:05.9927337Z",
+                                       "cpuIdleTicks":  584550312500,
+                                       "cpuTimestamp":  1.3439617985796626E+17,
+                                       "diskTicks":  927066499,
+                                       "diskTransfers":  5845244,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  485056
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:13:11.2540899Z",
+                                       "cpuIdleTicks":  584580117187,
+                                       "cpuTimestamp":  1.3439617991041672E+17,
+                                       "diskTicks":  928712344,
+                                       "diskTransfers":  5845515,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  485368
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:13:16.5364814Z",
+                                       "cpuIdleTicks":  584611757812,
+                                       "cpuTimestamp":  1.3439617996300752E+17,
+                                       "diskTicks":  929366469,
+                                       "diskTransfers":  5845663,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  492620
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:13:21.7729144Z",
+                                       "cpuIdleTicks":  584646914062,
+                                       "cpuTimestamp":  1.3439618001598482E+17,
+                                       "diskTicks":  929884408,
+                                       "diskTransfers":  5845755,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  487232
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:13:27.1276262Z",
+                                       "cpuIdleTicks":  584676523437,
+                                       "cpuTimestamp":  1.3439618006885642E+17,
+                                       "diskTicks":  939149145,
+                                       "diskTransfers":  5848244,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  392408
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:13:32.3808409Z",
+                                       "cpuIdleTicks":  584706953125,
+                                       "cpuTimestamp":  1.3439618012183819E+17,
+                                       "diskTicks":  945579897,
+                                       "diskTransfers":  5849104,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  489392
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:13:37.5721375Z",
+                                       "cpuIdleTicks":  584740937500,
+                                       "cpuTimestamp":  1.3439618017420141E+17,
+                                       "diskTicks":  946430506,
+                                       "diskTransfers":  5849303,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  503128
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:13:42.8317569Z",
+                                       "cpuIdleTicks":  584775898437,
+                                       "cpuTimestamp":  1.343961802262865E+17,
+                                       "diskTicks":  947135419,
+                                       "diskTransfers":  5849448,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  488420
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:13:48.0952422Z",
+                                       "cpuIdleTicks":  584809414062,
+                                       "cpuTimestamp":  1.3439618027887835E+17,
+                                       "diskTicks":  947775784,
+                                       "diskTransfers":  5849574,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  493136
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:13:53.3620676Z",
+                                       "cpuIdleTicks":  584842109375,
+                                       "cpuTimestamp":  1.3439618033154755E+17,
+                                       "diskTicks":  948616544,
+                                       "diskTransfers":  5849726,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  502100
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:13:58.6067951Z",
+                                       "cpuIdleTicks":  584876445312,
+                                       "cpuTimestamp":  1.3439618038411861E+17,
+                                       "diskTicks":  950811416,
+                                       "diskTransfers":  5850393,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  484508
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:14:03.8875673Z",
+                                       "cpuIdleTicks":  584910742187,
+                                       "cpuTimestamp":  1.3439618043658864E+17,
+                                       "diskTicks":  951270234,
+                                       "diskTransfers":  5850518,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  500412
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:14:09.1564178Z",
+                                       "cpuIdleTicks":  584946132812,
+                                       "cpuTimestamp":  1.3439618048936283E+17,
+                                       "diskTicks":  951676695,
+                                       "diskTransfers":  5850574,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  498156
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:14:14.4243752Z",
+                                       "cpuIdleTicks":  584977500000,
+                                       "cpuTimestamp":  1.3439618054219432E+17,
+                                       "diskTicks":  954865483,
+                                       "diskTransfers":  5851531,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  489536
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:14:19.6680608Z",
+                                       "cpuIdleTicks":  585002109375,
+                                       "cpuTimestamp":  1.3439618059491856E+17,
+                                       "diskTicks":  988940136,
+                                       "diskTransfers":  5854020,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  482920
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:14:24.9234842Z",
+                                       "cpuIdleTicks":  585034531250,
+                                       "cpuTimestamp":  1.3439618064725936E+17,
+                                       "diskTicks":  990819753,
+                                       "diskTransfers":  5854326,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  481800
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:14:30.1798301Z",
+                                       "cpuIdleTicks":  585068007812,
+                                       "cpuTimestamp":  1.3439618069971085E+17,
+                                       "diskTicks":  993599715,
+                                       "diskTransfers":  5854746,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  493244
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:14:35.3906835Z",
+                                       "cpuIdleTicks":  585099804687,
+                                       "cpuTimestamp":  1.343961807522477E+17,
+                                       "diskTicks":  995065685,
+                                       "diskTransfers":  5855205,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  485972
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:14:40.6462706Z",
+                                       "cpuIdleTicks":  585131367187,
+                                       "cpuTimestamp":  1.3439618080448021E+17,
+                                       "diskTicks":  995724119,
+                                       "diskTransfers":  5855361,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  504384
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:14:45.9081480Z",
+                                       "cpuIdleTicks":  585162343750,
+                                       "cpuTimestamp":  1.3439618085709054E+17,
+                                       "diskTicks":  997502978,
+                                       "diskTransfers":  5855895,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  513520
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:14:51.2061792Z",
+                                       "cpuIdleTicks":  585193632812,
+                                       "cpuTimestamp":  1.3439618090958782E+17,
+                                       "diskTicks":  998023185,
+                                       "diskTransfers":  5856014,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  524060
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:14:56.4710535Z",
+                                       "cpuIdleTicks":  585228515625,
+                                       "cpuTimestamp":  1.3439618096265885E+17,
+                                       "diskTicks":  1001298186,
+                                       "diskTransfers":  5857028,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  508104
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:15:01.7291608Z",
+                                       "cpuIdleTicks":  585263046875,
+                                       "cpuTimestamp":  1.3439618101518115E+17,
+                                       "diskTicks":  1001831113,
+                                       "diskTransfers":  5857133,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  507368
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:15:07.0131055Z",
+                                       "cpuIdleTicks":  585300195312,
+                                       "cpuTimestamp":  1.343961810678548E+17,
+                                       "diskTicks":  1002232877,
+                                       "diskTransfers":  5857205,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  500456
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:15:12.2685003Z",
+                                       "cpuIdleTicks":  585334023437,
+                                       "cpuTimestamp":  1.3439618112065589E+17,
+                                       "diskTicks":  1002860110,
+                                       "diskTransfers":  5857343,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  494804
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:15:17.5355570Z",
+                                       "cpuIdleTicks":  585371601562,
+                                       "cpuTimestamp":  1.3439618117329877E+17,
+                                       "diskTicks":  1003557747,
+                                       "diskTransfers":  5857488,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  489388
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:15:22.7256373Z",
+                                       "cpuIdleTicks":  585402695312,
+                                       "cpuTimestamp":  1.3439618122564866E+17,
+                                       "diskTicks":  1005333994,
+                                       "diskTransfers":  5858025,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  485864
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:15:27.9604546Z",
+                                       "cpuIdleTicks":  585428359375,
+                                       "cpuTimestamp":  1.3439618127779432E+17,
+                                       "diskTicks":  1015471575,
+                                       "diskTransfers":  5860631,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  441932
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:15:33.2350751Z",
+                                       "cpuIdleTicks":  585458632812,
+                                       "cpuTimestamp":  1.3439618133020219E+17,
+                                       "diskTicks":  1017530020,
+                                       "diskTransfers":  5860801,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  482036
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:15:38.4361132Z",
+                                       "cpuIdleTicks":  585488125000,
+                                       "cpuTimestamp":  1.3439618138278907E+17,
+                                       "diskTicks":  1018059503,
+                                       "diskTransfers":  5860946,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  498520
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:15:43.6342487Z",
+                                       "cpuIdleTicks":  585517578125,
+                                       "cpuTimestamp":  1.3439618143483261E+17,
+                                       "diskTicks":  1018781369,
+                                       "diskTransfers":  5861168,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  498580
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:15:48.8911233Z",
+                                       "cpuIdleTicks":  585552695312,
+                                       "cpuTimestamp":  1.3439618148689707E+17,
+                                       "diskTicks":  1019673628,
+                                       "diskTransfers":  5861415,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  490080
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:15:54.1341594Z",
+                                       "cpuIdleTicks":  585579140625,
+                                       "cpuTimestamp":  1.3439618153953714E+17,
+                                       "diskTicks":  1024731669,
+                                       "diskTransfers":  5862456,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  442828
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:15:59.3994184Z",
+                                       "cpuIdleTicks":  585615390625,
+                                       "cpuTimestamp":  1.3439618159183574E+17,
+                                       "diskTicks":  1025243341,
+                                       "diskTransfers":  5862556,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  437032
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:16:04.6484984Z",
+                                       "cpuIdleTicks":  585652226562,
+                                       "cpuTimestamp":  1.3439618164441478E+17,
+                                       "diskTicks":  1026088595,
+                                       "diskTransfers":  5862788,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  427456
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:16:09.8965026Z",
+                                       "cpuIdleTicks":  585689179687,
+                                       "cpuTimestamp":  1.3439618169709045E+17,
+                                       "diskTicks":  1026537780,
+                                       "diskTransfers":  5862865,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  423428
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:16:15.1465284Z",
+                                       "cpuIdleTicks":  585723046875,
+                                       "cpuTimestamp":  1.3439618174939283E+17,
+                                       "diskTicks":  1027187125,
+                                       "diskTransfers":  5863004,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  418940
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:16:20.4250017Z",
+                                       "cpuIdleTicks":  585758085937,
+                                       "cpuTimestamp":  1.3439618180213259E+17,
+                                       "diskTicks":  1027767748,
+                                       "diskTransfers":  5863125,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  410104
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:16:25.6868957Z",
+                                       "cpuIdleTicks":  585787226562,
+                                       "cpuTimestamp":  1.3439618185498379E+17,
+                                       "diskTicks":  1033780181,
+                                       "diskTransfers":  5864955,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  399108
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:16:30.9643141Z",
+                                       "cpuIdleTicks":  585823359375,
+                                       "cpuTimestamp":  1.3439618190739749E+17,
+                                       "diskTicks":  1034217690,
+                                       "diskTransfers":  5865004,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  390996
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:16:36.2332493Z",
+                                       "cpuIdleTicks":  585857343750,
+                                       "cpuTimestamp":  1.3439618196020571E+17,
+                                       "diskTicks":  1034603226,
+                                       "diskTransfers":  5865075,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  385396
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:16:41.5009538Z",
+                                       "cpuIdleTicks":  585891953125,
+                                       "cpuTimestamp":  1.3439618201286438E+17,
+                                       "diskTicks":  1035003001,
+                                       "diskTransfers":  5865154,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  384268
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:16:46.7662358Z",
+                                       "cpuIdleTicks":  585926679687,
+                                       "cpuTimestamp":  1.3439618206548195E+17,
+                                       "diskTicks":  1036847721,
+                                       "diskTransfers":  5865411,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  382592
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:16:52.0536207Z",
+                                       "cpuIdleTicks":  585964062500,
+                                       "cpuTimestamp":  1.3439618211832222E+17,
+                                       "diskTicks":  1037407966,
+                                       "diskTransfers":  5865554,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  377132
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:16:57.3286066Z",
+                                       "cpuIdleTicks":  585998046875,
+                                       "cpuTimestamp":  1.3439618217115085E+17,
+                                       "diskTicks":  1038501092,
+                                       "diskTransfers":  5865866,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  346416
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:17:02.5974736Z",
+                                       "cpuIdleTicks":  586031523437,
+                                       "cpuTimestamp":  1.3439618222384605E+17,
+                                       "diskTicks":  1042445552,
+                                       "diskTransfers":  5866494,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  276432
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:17:07.8002509Z",
+                                       "cpuIdleTicks":  586051953125,
+                                       "cpuTimestamp":  1.3439618227634958E+17,
+                                       "diskTicks":  1076855844,
+                                       "diskTransfers":  5870101,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  490652
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:17:13.3695058Z",
+                                       "cpuIdleTicks":  586066132812,
+                                       "cpuTimestamp":  1.3439618232858134E+17,
+                                       "diskTicks":  1089118852,
+                                       "diskTransfers":  5872829,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  416772
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:17:18.6221987Z",
+                                       "cpuIdleTicks":  586091679687,
+                                       "cpuTimestamp":  1.3439618238436323E+17,
+                                       "diskTicks":  1095591928,
+                                       "diskTransfers":  5873991,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  494368
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:17:23.8353464Z",
+                                       "cpuIdleTicks":  586125039062,
+                                       "cpuTimestamp":  1.3439618243661688E+17,
+                                       "diskTicks":  1097293321,
+                                       "diskTransfers":  5874337,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  460044
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:17:29.0819737Z",
+                                       "cpuIdleTicks":  586160078125,
+                                       "cpuTimestamp":  1.3439618248882173E+17,
+                                       "diskTicks":  1108550228,
+                                       "diskTransfers":  5874491,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  561848
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:17:34.3159647Z",
+                                       "cpuIdleTicks":  586193828125,
+                                       "cpuTimestamp":  1.3439618254131437E+17,
+                                       "diskTicks":  1110341252,
+                                       "diskTransfers":  5875011,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  525428
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:17:39.5352057Z",
+                                       "cpuIdleTicks":  586229140625,
+                                       "cpuTimestamp":  1.3439618259364389E+17,
+                                       "diskTicks":  1111132526,
+                                       "diskTransfers":  5875150,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  475424
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:17:44.7615897Z",
+                                       "cpuIdleTicks":  586259140625,
+                                       "cpuTimestamp":  1.3439618264586469E+17,
+                                       "diskTicks":  1112064417,
+                                       "diskTransfers":  5875444,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  498944
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:17:50.0149891Z",
+                                       "cpuIdleTicks":  586294062500,
+                                       "cpuTimestamp":  1.3439618269818608E+17,
+                                       "diskTicks":  1112482443,
+                                       "diskTransfers":  5875509,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  489580
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:17:55.2544127Z",
+                                       "cpuIdleTicks":  586325937500,
+                                       "cpuTimestamp":  1.3439618275069786E+17,
+                                       "diskTicks":  1113552688,
+                                       "diskTransfers":  5875817,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  511784
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:18:00.5206527Z",
+                                       "cpuIdleTicks":  586358125000,
+                                       "cpuTimestamp":  1.3439618280308074E+17,
+                                       "diskTicks":  1114199983,
+                                       "diskTransfers":  5875975,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  500632
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:18:05.7790853Z",
+                                       "cpuIdleTicks":  586393203125,
+                                       "cpuTimestamp":  1.3439618285576714E+17,
+                                       "diskTicks":  1115100133,
+                                       "diskTransfers":  5876155,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  488632
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:18:11.0343725Z",
+                                       "cpuIdleTicks":  586428593750,
+                                       "cpuTimestamp":  1.3439618290839326E+17,
+                                       "diskTicks":  1115892180,
+                                       "diskTransfers":  5876345,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  491028
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:18:16.2548319Z",
+                                       "cpuIdleTicks":  586457539062,
+                                       "cpuTimestamp":  1.3439618296091522E+17,
+                                       "diskTicks":  1116987610,
+                                       "diskTransfers":  5876670,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  485044
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:18:21.4914361Z",
+                                       "cpuIdleTicks":  586492500000,
+                                       "cpuTimestamp":  1.3439618301297086E+17,
+                                       "diskTicks":  1117677146,
+                                       "diskTransfers":  5876825,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  504976
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:18:26.7876477Z",
+                                       "cpuIdleTicks":  586529570312,
+                                       "cpuTimestamp":  1.3439618306542072E+17,
+                                       "diskTicks":  1118309469,
+                                       "diskTransfers":  5876988,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  491528
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:18:32.0458813Z",
+                                       "cpuIdleTicks":  586552695312,
+                                       "cpuTimestamp":  1.3439618311847493E+17,
+                                       "diskTicks":  1129668467,
+                                       "diskTransfers":  5880106,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  507936
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:18:37.3410553Z",
+                                       "cpuIdleTicks":  586586914062,
+                                       "cpuTimestamp":  1.3439618317102973E+17,
+                                       "diskTicks":  1132664869,
+                                       "diskTransfers":  5880915,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  486852
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:18:42.5886860Z",
+                                       "cpuIdleTicks":  586618203125,
+                                       "cpuTimestamp":  1.343961832239755E+17,
+                                       "diskTicks":  1133242526,
+                                       "diskTransfers":  5881026,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  476196
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:18:47.8109471Z",
+                                       "cpuIdleTicks":  586651914062,
+                                       "cpuTimestamp":  1.3439618327636166E+17,
+                                       "diskTicks":  1134201829,
+                                       "diskTransfers":  5881249,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  488312
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:18:53.0968090Z",
+                                       "cpuIdleTicks":  586684921875,
+                                       "cpuTimestamp":  1.3439618332874928E+17,
+                                       "diskTicks":  1134987819,
+                                       "diskTransfers":  5881440,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  482424
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:18:58.3596473Z",
+                                       "cpuIdleTicks":  586717187500,
+                                       "cpuTimestamp":  1.343961833815025E+17,
+                                       "diskTicks":  1135509877,
+                                       "diskTransfers":  5881539,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  491544
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:19:03.5730846Z",
+                                       "cpuIdleTicks":  586751289062,
+                                       "cpuTimestamp":  1.3439618343405973E+17,
+                                       "diskTicks":  1137058692,
+                                       "diskTransfers":  5882006,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  488196
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:19:08.7829993Z",
+                                       "cpuIdleTicks":  586785156250,
+                                       "cpuTimestamp":  1.3439618348624027E+17,
+                                       "diskTicks":  1137574004,
+                                       "diskTransfers":  5882142,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  500864
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:19:14.0155541Z",
+                                       "cpuIdleTicks":  586814296875,
+                                       "cpuTimestamp":  1.3439618353844722E+17,
+                                       "diskTicks":  1138047934,
+                                       "diskTransfers":  5882221,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  475692
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:19:19.2632528Z",
+                                       "cpuIdleTicks":  586846406250,
+                                       "cpuTimestamp":  1.3439618359063043E+17,
+                                       "diskTicks":  1138700645,
+                                       "diskTransfers":  5882378,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  504192
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:19:24.5109584Z",
+                                       "cpuIdleTicks":  586881132812,
+                                       "cpuTimestamp":  1.343961836431181E+17,
+                                       "diskTicks":  1139277350,
+                                       "diskTransfers":  5882508,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  502372
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:19:29.7914854Z",
+                                       "cpuIdleTicks":  586913554687,
+                                       "cpuTimestamp":  1.3439618369576048E+17,
+                                       "diskTicks":  1139779889,
+                                       "diskTransfers":  5882593,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  491116
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:19:35.0428433Z",
+                                       "cpuIdleTicks":  586945546875,
+                                       "cpuTimestamp":  1.3439618374851886E+17,
+                                       "diskTicks":  1140940631,
+                                       "diskTransfers":  5882826,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  491708
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:19:40.2409485Z",
+                                       "cpuIdleTicks":  586977031250,
+                                       "cpuTimestamp":  1.3439618380087437E+17,
+                                       "diskTicks":  1141667963,
+                                       "diskTransfers":  5882913,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  522568
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:19:45.4703224Z",
+                                       "cpuIdleTicks":  587005312500,
+                                       "cpuTimestamp":  1.3439618385295285E+17,
+                                       "diskTicks":  1145687805,
+                                       "diskTransfers":  5883326,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  488488
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:19:50.6649963Z",
+                                       "cpuIdleTicks":  587037617187,
+                                       "cpuTimestamp":  1.3439618390507949E+17,
+                                       "diskTicks":  1146680338,
+                                       "diskTransfers":  5883493,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  501180
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:19:55.8999306Z",
+                                       "cpuIdleTicks":  587068164062,
+                                       "cpuTimestamp":  1.3439618395724368E+17,
+                                       "diskTicks":  1150587552,
+                                       "diskTransfers":  5884570,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  485136
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:20:01.0810870Z",
+                                       "cpuIdleTicks":  587100156250,
+                                       "cpuTimestamp":  1.343961840093593E+17,
+                                       "diskTicks":  1151683919,
+                                       "diskTransfers":  5884839,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  508016
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:20:06.3294415Z",
+                                       "cpuIdleTicks":  587137890625,
+                                       "cpuTimestamp":  1.3439618406143088E+17,
+                                       "diskTicks":  1152393314,
+                                       "diskTransfers":  5885018,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  499396
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:20:11.5592037Z",
+                                       "cpuIdleTicks":  587174296875,
+                                       "cpuTimestamp":  1.3439618411380344E+17,
+                                       "diskTicks":  1152808421,
+                                       "diskTransfers":  5885080,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  492732
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:20:16.8072739Z",
+                                       "cpuIdleTicks":  587204843750,
+                                       "cpuTimestamp":  1.343961841661887E+17,
+                                       "diskTicks":  1154483278,
+                                       "diskTransfers":  5885575,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  497376
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:20:22.0669948Z",
+                                       "cpuIdleTicks":  587236562500,
+                                       "cpuTimestamp":  1.3439618421858584E+17,
+                                       "diskTicks":  1155604993,
+                                       "diskTransfers":  5885879,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  445916
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:20:27.3262765Z",
+                                       "cpuIdleTicks":  587261835937,
+                                       "cpuTimestamp":  1.3439618427129214E+17,
+                                       "diskTicks":  1167817857,
+                                       "diskTransfers":  5888591,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  491152
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:20:32.5394144Z",
+                                       "cpuIdleTicks":  587292968750,
+                                       "cpuTimestamp":  1.3439618432367618E+17,
+                                       "diskTicks":  1168274371,
+                                       "diskTransfers":  5888674,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  499208
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:20:37.8048229Z",
+                                       "cpuIdleTicks":  587324335937,
+                                       "cpuTimestamp":  1.3439618437586861E+17,
+                                       "diskTicks":  1168738788,
+                                       "diskTransfers":  5888755,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  470224
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:20:43.0682474Z",
+                                       "cpuIdleTicks":  587355429687,
+                                       "cpuTimestamp":  1.34396184428642E+17,
+                                       "diskTicks":  1169969404,
+                                       "diskTransfers":  5889057,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  476568
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:20:48.3015171Z",
+                                       "cpuIdleTicks":  587389101562,
+                                       "cpuTimestamp":  1.3439618448129213E+17,
+                                       "diskTicks":  1171527422,
+                                       "diskTransfers":  5889243,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  492256
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:20:53.5680142Z",
+                                       "cpuIdleTicks":  587424804687,
+                                       "cpuTimestamp":  1.3439618453370773E+17,
+                                       "diskTicks":  1172082049,
+                                       "diskTransfers":  5889354,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  482520
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:20:58.8192580Z",
+                                       "cpuIdleTicks":  587454023437,
+                                       "cpuTimestamp":  1.3439618458611443E+17,
+                                       "diskTicks":  1173080715,
+                                       "diskTransfers":  5889646,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  493720
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:21:04.0607886Z",
+                                       "cpuIdleTicks":  587487109375,
+                                       "cpuTimestamp":  1.3439618463876702E+17,
+                                       "diskTicks":  1173682477,
+                                       "diskTransfers":  5889782,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  497220
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:21:09.3108578Z",
+                                       "cpuIdleTicks":  587524375000,
+                                       "cpuTimestamp":  1.3439618469110859E+17,
+                                       "diskTicks":  1174240979,
+                                       "diskTransfers":  5889862,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  487928
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:21:14.5730939Z",
+                                       "cpuIdleTicks":  587551718750,
+                                       "cpuTimestamp":  1.3439618474363144E+17,
+                                       "diskTicks":  1179904558,
+                                       "diskTransfers":  5890395,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  480660
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:21:19.8391022Z",
+                                       "cpuIdleTicks":  587584257812,
+                                       "cpuTimestamp":  1.3439618479634243E+17,
+                                       "diskTicks":  1181074513,
+                                       "diskTransfers":  5890535,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  470844
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:21:25.0884684Z",
+                                       "cpuIdleTicks":  587616562500,
+                                       "cpuTimestamp":  1.3439618484899379E+17,
+                                       "diskTicks":  1181887563,
+                                       "diskTransfers":  5890656,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  470112
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:21:30.3361944Z",
+                                       "cpuIdleTicks":  587650468750,
+                                       "cpuTimestamp":  1.3439618490143387E+17,
+                                       "diskTicks":  1184422969,
+                                       "diskTransfers":  5891420,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  457368
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:21:35.6008369Z",
+                                       "cpuIdleTicks":  587684687500,
+                                       "cpuTimestamp":  1.343961849540765E+17,
+                                       "diskTicks":  1184897239,
+                                       "diskTransfers":  5891460,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  458788
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:21:40.8337063Z",
+                                       "cpuIdleTicks":  587720312500,
+                                       "cpuTimestamp":  1.3439618500647275E+17,
+                                       "diskTicks":  1185441191,
+                                       "diskTransfers":  5891512,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  457808
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T03:21:42.0655507Z",
+                                       "cpuIdleTicks":  587728164062,
+                                       "cpuTimestamp":  1.3439618501882707E+17,
+                                       "diskTicks":  1185589743,
+                                       "diskTransfers":  5891527,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  451888
+                                   }
+                               ],
+                   "SqlSamples":  [
+
+                                  ],
+                   "Connectivity":  [
+                                        {
+                                            "host":  "127.0.0.1",
+                                            "port":  8080,
+                                            "enabled":  true,
+                                            "sourceServer":  "LAPTOP-03HO6PCU",
+                                            "mode":  "live",
+                                            "dns":  {
+                                                        "status":  "Healthy",
+                                                        "error":  null,
+                                                        "resolvedAddress":  "127.0.0.1"
+                                                    },
+                                            "ping":  {
+                                                         "sent":  4,
+                                                         "replies":  4,
+                                                         "timeouts":  0,
+                                                         "probes":  [
+                                                                        {
+                                                                            "latencyMs":  0,
+                                                                            "sequence":  1,
+                                                                            "timeout":  false
+                                                                        },
+                                                                        {
+                                                                            "latencyMs":  0,
+                                                                            "sequence":  2,
+                                                                            "timeout":  false
+                                                                        },
+                                                                        {
+                                                                            "latencyMs":  0,
+                                                                            "sequence":  3,
+                                                                            "timeout":  false
+                                                                        },
+                                                                        {
+                                                                            "latencyMs":  0,
+                                                                            "sequence":  4,
+                                                                            "timeout":  false
+                                                                        }
+                                                                    ],
+                                                         "minimumMs":  0,
+                                                         "averageMs":  0,
+                                                         "status":  "Healthy",
+                                                         "unansweredPercent":  0,
+                                                         "maximumMs":  0
+                                                     },
+                                            "tcp":  {
+                                                        "error":  null,
+                                                        "connected":  true,
+                                                        "timingMs":  68,
+                                                        "port":  8080,
+                                                        "status":  "Healthy"
+                                                    },
+                                            "https":  {
+                                                          "error":  null,
+                                                          "timingMs":  203,
+                                                          "status":  "Healthy",
+                                                          "protocol":  "http",
+                                                          "statusCode":  200
+                                                      },
+                                            "trace":  {
+                                                          "triggerReasons":  [
+
+                                                                             ],
+                                                          "reached":  false,
+                                                          "destination":  "127.0.0.1",
+                                                          "truncated":  false,
+                                                          "sourceServer":  "LAPTOP-03HO6PCU",
+                                                          "attemptCount":  0,
+                                                          "hops":  [
+
+                                                                   ],
+                                                          "explanation":  "No trace trigger.",
+                                                          "attempted":  false
+                                                      },
+                                            "error":  null,
+                                            "startedAt":  "2026-11-20T03:21:43.0578028Z",
+                                            "completedAt":  "2026-11-20T03:21:43.6562472Z"
+                                        }
+                                    ],
+                   "Cluster":  null,
+                   "EventResult":  {
+                                       "groups":  [
+                                                      {
+                                                          "log":  "Application",
+                                                          "provider":  ".NET Runtime",
+                                                          "eventId":  1022,
+                                                          "count":  4,
+                                                          "firstSeen":  "2026-11-19T04:12:02.4698417Z",
+                                                          "lastSeen":  "2026-11-20T02:41:03.8916240Z",
+                                                          "latest":  {
+                                                                         "key":  "LAPTOP-03HO6PCU|Application|.NET Runtime|32459",
+                                                                         "server":  "LAPTOP-03HO6PCU",
+                                                                         "log":  "Application",
+                                                                         "provider":  ".NET Runtime",
+                                                                         "eventId":  1022,
+                                                                         "recordId":  32459,
+                                                                         "timestamp":  "2026-11-20T02:41:03.8916240Z",
+                                                                         "originalTimestamp":  "2026-11-19T21:41:03.8916240-05:00",
+                                                                         "originalTimeZone":  "Eastern Standard Time",
+                                                                         "severity":  "Error",
+                                                                         "message":  ".NET Runtime version 4.0.30319.0 - There was a failure initializing profiling API attach infrastructure.  This process will not allow a profiler to attach.  HRESULT: 0x80004005.  Process ID (decimal): 4416.  Message ID: [0x2509].",
+                                                                         "simulated":  false
+                                                                     }
+                                                      },
+                                                      {
+                                                          "log":  "Application",
+                                                          "provider":  "Application Error",
+                                                          "eventId":  1000,
+                                                          "count":  22,
+                                                          "firstSeen":  "2026-11-19T03:52:02.8052403Z",
+                                                          "lastSeen":  "2026-11-20T02:51:54.9951567Z",
+                                                          "latest":  {
+                                                                         "key":  "LAPTOP-03HO6PCU|Application|Application Error|32461",
+                                                                         "server":  "LAPTOP-03HO6PCU",
+                                                                         "log":  "Application",
+                                                                         "provider":  "Application Error",
+                                                                         "eventId":  1000,
+                                                                         "recordId":  32461,
+                                                                         "timestamp":  "2026-11-20T02:51:54.9951567Z",
+                                                                         "originalTimestamp":  "2026-11-19T21:51:54.9951567-05:00",
+                                                                         "originalTimeZone":  "Eastern Standard Time",
+                                                                         "severity":  "Error",
+                                                                         "message":  "Faulting application name: DivXUpdate.exe, version: 10.8.10.0, time stamp: 0x6303ce7f\r\nFaulting module name: Qt5Core.dll, version: 5.15.2.0, time stamp: 0x5fa4dd26\r\nException code: 0xc0000409\r\nFault offset: 0x0001f081\r\nFaulting process id: 0x3D5C\r\nFaulting application start time: 0x1DD789A17748F88\r\nFaulting application path: C:\\Program Files (x86)\\Common Files\\DivX Shared\\DivX Update\\DivXUpdate.exe\r\nFaulting module path: C:\\Program Files (x86)\\Common Files\\DivX Shared\\Qt5.6\\Qt5Core.dll\r\nReport Id: eac541e6-b19a-453e-96c5-336ebb94ab85\r\nFaulting package full name: \r\nFaulting package-relative application ID: ",
+                                                                         "simulated":  false
+                                                                     }
+                                                      },
+                                                      {
+                                                          "log":  "System",
+                                                          "provider":  "Microsoft-Windows-Windows Firewall With Advanced Security",
+                                                          "eventId":  2042,
+                                                          "count":  2,
+                                                          "firstSeen":  "2026-11-19T04:18:07.3637108Z",
+                                                          "lastSeen":  "2026-11-19T04:18:07.8265127Z",
+                                                          "latest":  {
+                                                                         "key":  "LAPTOP-03HO6PCU|System|Microsoft-Windows-Windows Firewall With Advanced Security|34409",
+                                                                         "server":  "LAPTOP-03HO6PCU",
+                                                                         "log":  "System",
+                                                                         "provider":  "Microsoft-Windows-Windows Firewall With Advanced Security",
+                                                                         "eventId":  2042,
+                                                                         "recordId":  34409,
+                                                                         "timestamp":  "2026-11-19T04:18:07.8265127Z",
+                                                                         "originalTimestamp":  "2026-11-18T23:18:07.8265127-05:00",
+                                                                         "originalTimeZone":  "Eastern Standard Time",
+                                                                         "severity":  "Error",
+                                                                         "message":  "Config Read Failed\r\n\r\nConfig:\t18\r\nError:\tAccess is denied.",
+                                                                         "simulated":  false
+                                                                     }
+                                                      },
+                                                      {
+                                                          "log":  "System",
+                                                          "provider":  "Microsoft-Windows-WindowsUpdateClient",
+                                                          "eventId":  20,
+                                                          "count":  1,
+                                                          "firstSeen":  "2026-11-19T14:24:53.2658602Z",
+                                                          "lastSeen":  "2026-11-19T14:24:53.2658602Z",
+                                                          "latest":  {
+                                                                         "key":  "LAPTOP-03HO6PCU|System|Microsoft-Windows-WindowsUpdateClient|34512",
+                                                                         "server":  "LAPTOP-03HO6PCU",
+                                                                         "log":  "System",
+                                                                         "provider":  "Microsoft-Windows-WindowsUpdateClient",
+                                                                         "eventId":  20,
+                                                                         "recordId":  34512,
+                                                                         "timestamp":  "2026-11-19T14:24:53.2658602Z",
+                                                                         "originalTimestamp":  "2026-11-19T09:24:53.2658602-05:00",
+                                                                         "originalTimeZone":  "Eastern Standard Time",
+                                                                         "severity":  "Error",
+                                                                         "message":  "Installation Failure: Windows failed to install the following update with error 0x80073D02: 9N9PHDT62W94-AD2F1837.myHP.",
+                                                                         "simulated":  false
+                                                                     }
+                                                      },
+                                                      {
+                                                          "log":  "System",
+                                                          "provider":  "Service Control Manager",
+                                                          "eventId":  7023,
+                                                          "count":  3,
+                                                          "firstSeen":  "2026-11-19T03:14:52.8458657Z",
+                                                          "lastSeen":  "2026-11-19T04:20:04.1243170Z",
+                                                          "latest":  {
+                                                                         "key":  "LAPTOP-03HO6PCU|System|Service Control Manager|34461",
+                                                                         "server":  "LAPTOP-03HO6PCU",
+                                                                         "log":  "System",
+                                                                         "provider":  "Service Control Manager",
+                                                                         "eventId":  7023,
+                                                                         "recordId":  34461,
+                                                                         "timestamp":  "2026-11-19T04:20:04.1243170Z",
+                                                                         "originalTimestamp":  "2026-11-18T23:20:04.1243170-05:00",
+                                                                         "originalTimeZone":  "Eastern Standard Time",
+                                                                         "severity":  "Error",
+                                                                         "message":  "The Downloaded Maps Manager service terminated with the following error: \r\nThe request is not supported.",
+                                                                         "simulated":  false
+                                                                     }
+                                                      }
+                                                  ],
+                                       "events":  [
+                                                      {
+                                                          "key":  "LAPTOP-03HO6PCU|Application|.NET Runtime|32459",
+                                                          "server":  "LAPTOP-03HO6PCU",
+                                                          "log":  "Application",
+                                                          "provider":  ".NET Runtime",
+                                                          "eventId":  1022,
+                                                          "recordId":  32459,
+                                                          "timestamp":  "2026-11-20T02:41:03.8916240Z",
+                                                          "originalTimestamp":  "2026-11-19T21:41:03.8916240-05:00",
+                                                          "originalTimeZone":  "Eastern Standard Time",
+                                                          "severity":  "Error",
+                                                          "message":  ".NET Runtime version 4.0.30319.0 - There was a failure initializing profiling API attach infrastructure.  This process will not allow a profiler to attach.  HRESULT: 0x80004005.  Process ID (decimal): 4416.  Message ID: [0x2509].",
+                                                          "simulated":  false
+                                                      },
+                                                      {
+                                                          "key":  "LAPTOP-03HO6PCU|Application|Application Error|32461",
+                                                          "server":  "LAPTOP-03HO6PCU",
+                                                          "log":  "Application",
+                                                          "provider":  "Application Error",
+                                                          "eventId":  1000,
+                                                          "recordId":  32461,
+                                                          "timestamp":  "2026-11-20T02:51:54.9951567Z",
+                                                          "originalTimestamp":  "2026-11-19T21:51:54.9951567-05:00",
+                                                          "originalTimeZone":  "Eastern Standard Time",
+                                                          "severity":  "Error",
+                                                          "message":  "Faulting application name: DivXUpdate.exe, version: 10.8.10.0, time stamp: 0x6303ce7f\r\nFaulting module name: Qt5Core.dll, version: 5.15.2.0, time stamp: 0x5fa4dd26\r\nException code: 0xc0000409\r\nFault offset: 0x0001f081\r\nFaulting process id: 0x3D5C\r\nFaulting application start time: 0x1DD789A17748F88\r\nFaulting application path: C:\\Program Files (x86)\\Common Files\\DivX Shared\\DivX Update\\DivXUpdate.exe\r\nFaulting module path: C:\\Program Files (x86)\\Common Files\\DivX Shared\\Qt5.6\\Qt5Core.dll\r\nReport Id: eac541e6-b19a-453e-96c5-336ebb94ab85\r\nFaulting package full name: \r\nFaulting package-relative application ID: ",
+                                                          "simulated":  false
+                                                      },
+                                                      {
+                                                          "key":  "LAPTOP-03HO6PCU|System|Microsoft-Windows-Windows Firewall With Advanced Security|34409",
+                                                          "server":  "LAPTOP-03HO6PCU",
+                                                          "log":  "System",
+                                                          "provider":  "Microsoft-Windows-Windows Firewall With Advanced Security",
+                                                          "eventId":  2042,
+                                                          "recordId":  34409,
+                                                          "timestamp":  "2026-11-19T04:18:07.8265127Z",
+                                                          "originalTimestamp":  "2026-11-18T23:18:07.8265127-05:00",
+                                                          "originalTimeZone":  "Eastern Standard Time",
+                                                          "severity":  "Error",
+                                                          "message":  "Config Read Failed\r\n\r\nConfig:\t18\r\nError:\tAccess is denied.",
+                                                          "simulated":  false
+                                                      },
+                                                      {
+                                                          "key":  "LAPTOP-03HO6PCU|System|Microsoft-Windows-WindowsUpdateClient|34512",
+                                                          "server":  "LAPTOP-03HO6PCU",
+                                                          "log":  "System",
+                                                          "provider":  "Microsoft-Windows-WindowsUpdateClient",
+                                                          "eventId":  20,
+                                                          "recordId":  34512,
+                                                          "timestamp":  "2026-11-19T14:24:53.2658602Z",
+                                                          "originalTimestamp":  "2026-11-19T09:24:53.2658602-05:00",
+                                                          "originalTimeZone":  "Eastern Standard Time",
+                                                          "severity":  "Error",
+                                                          "message":  "Installation Failure: Windows failed to install the following update with error 0x80073D02: 9N9PHDT62W94-AD2F1837.myHP.",
+                                                          "simulated":  false
+                                                      },
+                                                      {
+                                                          "key":  "LAPTOP-03HO6PCU|System|Service Control Manager|34461",
+                                                          "server":  "LAPTOP-03HO6PCU",
+                                                          "log":  "System",
+                                                          "provider":  "Service Control Manager",
+                                                          "eventId":  7023,
+                                                          "recordId":  34461,
+                                                          "timestamp":  "2026-11-19T04:20:04.1243170Z",
+                                                          "originalTimestamp":  "2026-11-18T23:20:04.1243170-05:00",
+                                                          "originalTimeZone":  "Eastern Standard Time",
+                                                          "severity":  "Error",
+                                                          "message":  "The Downloaded Maps Manager service terminated with the following error: \r\nThe request is not supported.",
+                                                          "simulated":  false
+                                                      }
+                                                  ],
+                                       "searches":  [
+                                                        {
+                                                            "node":  "LAPTOP-03HO6PCU",
+                                                            "log":  "System",
+                                                            "status":  "Collected",
+                                                            "error":  null,
+                                                            "matchingAtLeast":  6,
+                                                            "truncated":  false
+                                                        },
+                                                        {
+                                                            "node":  "LAPTOP-03HO6PCU",
+                                                            "log":  "Application",
+                                                            "status":  "Collected",
+                                                            "error":  null,
+                                                            "matchingAtLeast":  26,
+                                                            "truncated":  false
+                                                        }
+                                                    ],
+                                       "truncated":  false,
+                                       "summaryLimit":  20000,
+                                       "start":  "2026-11-19T03:06:39.5562920Z",
+                                       "end":  "2026-11-20T03:21:43.7412545Z",
+                                       "collectedAt":  "2026-11-20T03:21:44.9475798Z",
+                                       "source":  "LAPTOP-03HO6PCU",
+                                       "targetTimeZone":  {
+                                                              "id":  "Eastern Standard Time",
+                                                              "displayName":  "(UTC-05:00) Eastern Time (US \u0026 Canada)",
+                                                              "standardName":  "Eastern Standard Time",
+                                                              "daylightName":  "Eastern Daylight Time",
+                                                              "supportsDaylightSavingTime":  true,
+                                                              "capturedAt":  "2026-11-20T03:21:44.9719927Z",
+                                                              "source":  "LAPTOP-03HO6PCU",
+                                                              "periods":  [
+                                                                              {
+                                                                                  "startUtc":  "2025-01-01T00:00:00.0000000Z",
+                                                                                  "endUtc":  "2025-03-09T07:00:00.0000000Z",
+                                                                                  "offsetMinutes":  -300,
+                                                                                  "daylight":  false
+                                                                              },
+                                                                              {
+                                                                                  "startUtc":  "2025-03-09T07:00:00.0000000Z",
+                                                                                  "endUtc":  "2025-11-02T06:00:00.0000000Z",
+                                                                                  "offsetMinutes":  -240,
+                                                                                  "daylight":  true
+                                                                              },
+                                                                              {
+                                                                                  "startUtc":  "2025-11-02T06:00:00.0000000Z",
+                                                                                  "endUtc":  "2026-03-08T07:00:00.0000000Z",
+                                                                                  "offsetMinutes":  -300,
+                                                                                  "daylight":  false
+                                                                              },
+                                                                              {
+                                                                                  "startUtc":  "2026-03-08T07:00:00.0000000Z",
+                                                                                  "endUtc":  "2026-11-01T06:00:00.0000000Z",
+                                                                                  "offsetMinutes":  -240,
+                                                                                  "daylight":  true
+                                                                              },
+                                                                              {
+                                                                                  "startUtc":  "2026-11-01T06:00:00.0000000Z",
+                                                                                  "endUtc":  "2027-03-14T07:00:00.0000000Z",
+                                                                                  "offsetMinutes":  -300,
+                                                                                  "daylight":  false
+                                                                              },
+                                                                              {
+                                                                                  "startUtc":  "2027-03-14T07:00:00.0000000Z",
+                                                                                  "endUtc":  "2027-11-07T06:00:00.0000000Z",
+                                                                                  "offsetMinutes":  -240,
+                                                                                  "daylight":  true
+                                                                              },
+                                                                              {
+                                                                                  "startUtc":  "2027-11-07T06:00:00.0000000Z",
+                                                                                  "endUtc":  "2028-01-01T00:00:00.0000000Z",
+                                                                                  "offsetMinutes":  -300,
+                                                                                  "daylight":  false
+                                                                              }
+                                                                          ]
+                                                          },
+                                       "errorsOnly":  true
+                                   },
+                   "Errors":  [
+
+                              ],
+                   "Coverage":  "Timestamped local samples; CPU and system-volume latency use counter deltas. Memory is the sample mean. Capacity covers mounted volumes, including folder mounts and network drives visible to this execution identity. Unmounted partitions are excluded. Short observations do not establish sustained conditions."
+               },
+    "submittedAt":  "2026-11-20T03:06:37.1155032Z"
+}

@@ -1,0 +1,484 @@
+{
+    "startedAt":  "2026-11-20T21:45:37.7643104Z",
+    "options":  {
+                    "target":  "LAPTOP-03HO6PCU",
+                    "os":  "Windows",
+                    "profile":  "General Purpose Server",
+                    "sql":  false,
+                    "cluster":  false,
+                    "events":  true,
+                    "connectivity":  true,
+                    "execution":  "local",
+                    "sqlInstance":  "Auto",
+                    "observationSeconds":  5
+                },
+    "action":  "assess",
+    "id":  "b0a156d9-f615-46c0-9f8d-a3a77bb1c7c7",
+    "completedAt":  "2026-11-20T21:45:48.8968716Z",
+    "state":  "Completed",
+    "target":  "LAPTOP-03HO6PCU",
+    "pid":  10652,
+    "result":  {
+                   "Target":  "LAPTOP-03HO6PCU",
+                   "ExecutionSource":  "LAPTOP-03HO6PCU",
+                   "TargetTimeZone":  {
+                                          "id":  "Eastern Standard Time",
+                                          "displayName":  "(UTC-05:00) Eastern Time (US \u0026 Canada)",
+                                          "standardName":  "Eastern Standard Time",
+                                          "daylightName":  "Eastern Daylight Time",
+                                          "supportsDaylightSavingTime":  true,
+                                          "capturedAt":  "2026-11-20T21:45:48.7744569Z",
+                                          "source":  "LAPTOP-03HO6PCU",
+                                          "periods":  [
+                                                          {
+                                                              "startUtc":  "2025-01-01T00:00:00.0000000Z",
+                                                              "endUtc":  "2025-03-09T07:00:00.0000000Z",
+                                                              "offsetMinutes":  -300,
+                                                              "daylight":  false
+                                                          },
+                                                          {
+                                                              "startUtc":  "2025-03-09T07:00:00.0000000Z",
+                                                              "endUtc":  "2025-11-02T06:00:00.0000000Z",
+                                                              "offsetMinutes":  -240,
+                                                              "daylight":  true
+                                                          },
+                                                          {
+                                                              "startUtc":  "2025-11-02T06:00:00.0000000Z",
+                                                              "endUtc":  "2026-03-08T07:00:00.0000000Z",
+                                                              "offsetMinutes":  -300,
+                                                              "daylight":  false
+                                                          },
+                                                          {
+                                                              "startUtc":  "2026-03-08T07:00:00.0000000Z",
+                                                              "endUtc":  "2026-11-01T06:00:00.0000000Z",
+                                                              "offsetMinutes":  -240,
+                                                              "daylight":  true
+                                                          },
+                                                          {
+                                                              "startUtc":  "2026-11-01T06:00:00.0000000Z",
+                                                              "endUtc":  "2027-03-14T07:00:00.0000000Z",
+                                                              "offsetMinutes":  -300,
+                                                              "daylight":  false
+                                                          },
+                                                          {
+                                                              "startUtc":  "2027-03-14T07:00:00.0000000Z",
+                                                              "endUtc":  "2027-11-07T06:00:00.0000000Z",
+                                                              "offsetMinutes":  -240,
+                                                              "daylight":  true
+                                                          },
+                                                          {
+                                                              "startUtc":  "2027-11-07T06:00:00.0000000Z",
+                                                              "endUtc":  "2028-01-01T00:00:00.0000000Z",
+                                                              "offsetMinutes":  -300,
+                                                              "daylight":  false
+                                                          }
+                                                      ]
+                                      },
+                   "StartedAt":  "2026-11-20T21:45:38.0177049Z",
+                   "CompletedAt":  "2026-11-20T21:45:48.8883400Z",
+                   "Measurements":  {
+                                        "cpu":  19.27,
+                                        "memoryUsed":  87.77,
+                                        "availableGB":  0.42,
+                                        "totalMemoryGB":  3.42,
+                                        "diskFree":  13.25,
+                                        "diskTotalGB":  118.1,
+                                        "volumes":  [
+                                                        {
+                                                            "id":  "\\\\?\\Volume{7a4c1e19-9a0a-4fb6-b50b-4e5c7743fea2}\\",
+                                                            "mountPaths":  [
+                                                                               "C:\\"
+                                                                           ],
+                                                            "label":  "Windows",
+                                                            "fileSystem":  "NTFS",
+                                                            "driveType":  3,
+                                                            "totalBytes":  126804291584,
+                                                            "freeBytes":  16800927744,
+                                                            "usedBytes":  110003363840,
+                                                            "freePercent":  13.249494582658052,
+                                                            "error":  null
+                                                        },
+                                                        {
+                                                            "id":  "\\\\?\\Volume{2a6d4c2f-e3d0-11f1-a5e6-48e7da1efd7a}\\",
+                                                            "mountPaths":  [
+                                                                               "G:\\"
+                                                                           ],
+                                                            "label":  "Google Drive",
+                                                            "fileSystem":  "FAT32",
+                                                            "driveType":  3,
+                                                            "totalBytes":  107374182400,
+                                                            "freeBytes":  15960879104,
+                                                            "usedBytes":  91413303296,
+                                                            "freePercent":  14.864727020263672,
+                                                            "error":  null
+                                                        }
+                                                    ],
+                                        "volumeCapacityStatus":  "Collected",
+                                        "pendingReboot":  {
+                                                              "checkedAtUtc":  "2026-11-20T21:45:38.2082812Z",
+                                                              "pending":  true,
+                                                              "status":  "Warning",
+                                                              "coverage":  "Collected",
+                                                              "reasons":  [
+                                                                              "Pending file rename operations"
+                                                                          ],
+                                                              "indicators":  [
+                                                                                 {
+                                                                                     "name":  "Component Based Servicing",
+                                                                                     "registryPath":  "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Component Based Servicing\\RebootPending",
+                                                                                     "valueName":  null,
+                                                                                     "pending":  false,
+                                                                                     "status":  "Not detected",
+                                                                                     "error":  null
+                                                                                 },
+                                                                                 {
+                                                                                     "name":  "Windows Update",
+                                                                                     "registryPath":  "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\WindowsUpdate\\Auto Update\\RebootRequired",
+                                                                                     "valueName":  null,
+                                                                                     "pending":  false,
+                                                                                     "status":  "Not detected",
+                                                                                     "error":  null
+                                                                                 },
+                                                                                 {
+                                                                                     "name":  "Pending file rename operations",
+                                                                                     "registryPath":  "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Session Manager",
+                                                                                     "valueName":  "PendingFileRenameOperations",
+                                                                                     "pending":  true,
+                                                                                     "status":  "Detected",
+                                                                                     "error":  null
+                                                                                 },
+                                                                                 {
+                                                                                     "name":  "Additional pending file rename operations",
+                                                                                     "registryPath":  "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Session Manager",
+                                                                                     "valueName":  "PendingFileRenameOperations2",
+                                                                                     "pending":  false,
+                                                                                     "status":  "Not detected",
+                                                                                     "error":  null
+                                                                                 }
+                                                                             ],
+                                                              "scope":  "Windows servicing, Windows Update and pending file rename registry indicators. Other products may use additional signals. File rename entries can remain stale; review the evidence before scheduling a restart."
+                                                          },
+                                        "storageMs":  0.291,
+                                        "sampledMinutes":  0.105944515,
+                                        "observationSeconds":  6.357,
+                                        "localSnapshot":  true,
+                                        "diskLabel":  "C:",
+                                        "sqlTotalMB":  null,
+                                        "sqlTargetMB":  null,
+                                        "grants":  null,
+                                        "pressureMinutes":  null,
+                                        "uptimeMinutes":  null
+                                    },
+                   "Samples":  [
+                                   {
+                                       "timestamp":  "2026-11-20T21:45:41.2046274Z",
+                                       "cpuIdleTicks":  1109627695312,
+                                       "cpuTimestamp":  1.343968474103223E+17,
+                                       "diskTicks":  2143171045,
+                                       "diskTransfers":  17851145,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  433972
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T21:45:46.4264569Z",
+                                       "cpuIdleTicks":  1109673476562,
+                                       "cpuTimestamp":  1.3439684746309827E+17,
+                                       "diskTicks":  2146693294,
+                                       "diskTransfers":  17852308,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  435376
+                                   },
+                                   {
+                                       "timestamp":  "2026-11-20T21:45:47.5612983Z",
+                                       "cpuIdleTicks":  1109681953125,
+                                       "cpuTimestamp":  1.3439684747444518E+17,
+                                       "diskTicks":  2146965638,
+                                       "diskTransfers":  17852447,
+                                       "diskFrequency":  10000000,
+                                       "totalMemoryKB":  3583736,
+                                       "freeMemoryKB":  445132
+                                   }
+                               ],
+                   "SqlSamples":  [
+
+                                  ],
+                   "Connectivity":  [
+                                        {
+                                            "host":  "127.0.0.1",
+                                            "port":  8080,
+                                            "enabled":  true,
+                                            "sourceServer":  "LAPTOP-03HO6PCU",
+                                            "mode":  "live",
+                                            "dns":  {
+                                                        "status":  "Healthy",
+                                                        "error":  null,
+                                                        "resolvedAddress":  "127.0.0.1"
+                                                    },
+                                            "ping":  {
+                                                         "sent":  4,
+                                                         "replies":  4,
+                                                         "timeouts":  0,
+                                                         "probes":  [
+                                                                        {
+                                                                            "latencyMs":  0,
+                                                                            "sequence":  1,
+                                                                            "timeout":  false
+                                                                        },
+                                                                        {
+                                                                            "latencyMs":  0,
+                                                                            "sequence":  2,
+                                                                            "timeout":  false
+                                                                        },
+                                                                        {
+                                                                            "latencyMs":  0,
+                                                                            "sequence":  3,
+                                                                            "timeout":  false
+                                                                        },
+                                                                        {
+                                                                            "latencyMs":  0,
+                                                                            "sequence":  4,
+                                                                            "timeout":  false
+                                                                        }
+                                                                    ],
+                                                         "minimumMs":  0,
+                                                         "averageMs":  0,
+                                                         "status":  "Healthy",
+                                                         "unansweredPercent":  0,
+                                                         "maximumMs":  0
+                                                     },
+                                            "tcp":  {
+                                                        "error":  null,
+                                                        "connected":  true,
+                                                        "timingMs":  23,
+                                                        "port":  8080,
+                                                        "status":  "Healthy"
+                                                    },
+                                            "https":  {
+                                                          "error":  null,
+                                                          "timingMs":  125,
+                                                          "status":  "Healthy",
+                                                          "protocol":  "http",
+                                                          "statusCode":  200
+                                                      },
+                                            "trace":  {
+                                                          "triggerReasons":  [
+
+                                                                             ],
+                                                          "reached":  false,
+                                                          "destination":  "127.0.0.1",
+                                                          "truncated":  false,
+                                                          "sourceServer":  "LAPTOP-03HO6PCU",
+                                                          "attemptCount":  0,
+                                                          "hops":  [
+
+                                                                   ],
+                                                          "explanation":  "No trace trigger.",
+                                                          "attempted":  false
+                                                      },
+                                            "error":  null,
+                                            "startedAt":  "2026-11-20T21:45:47.8915963Z",
+                                            "completedAt":  "2026-11-20T21:45:48.1963744Z"
+                                        }
+                                    ],
+                   "Cluster":  null,
+                   "EventResult":  {
+                                       "groups":  [
+                                                      {
+                                                          "log":  "Application",
+                                                          "provider":  ".NET Runtime",
+                                                          "eventId":  1022,
+                                                          "count":  5,
+                                                          "firstSeen":  "2026-11-20T02:41:03.8916240Z",
+                                                          "lastSeen":  "2026-11-20T21:38:33.4631861Z",
+                                                          "latest":  {
+                                                                         "key":  "LAPTOP-03HO6PCU|Application|.NET Runtime|32749",
+                                                                         "server":  "LAPTOP-03HO6PCU",
+                                                                         "log":  "Application",
+                                                                         "provider":  ".NET Runtime",
+                                                                         "eventId":  1022,
+                                                                         "recordId":  32749,
+                                                                         "timestamp":  "2026-11-20T21:38:33.4631861Z",
+                                                                         "originalTimestamp":  "2026-11-20T16:38:33.4631861-05:00",
+                                                                         "originalTimeZone":  "Eastern Standard Time",
+                                                                         "severity":  "Error",
+                                                                         "message":  ".NET Runtime version 4.0.30319.0 - There was a failure initializing profiling API attach infrastructure.  This process will not allow a profiler to attach.  HRESULT: 0x80004005.  Process ID (decimal): 2036.  Message ID: [0x2509].",
+                                                                         "simulated":  false
+                                                                     }
+                                                      },
+                                                      {
+                                                          "log":  "Application",
+                                                          "provider":  "Application Error",
+                                                          "eventId":  1000,
+                                                          "count":  24,
+                                                          "firstSeen":  "2026-11-19T21:51:54.8486363Z",
+                                                          "lastSeen":  "2026-11-20T20:51:53.8279451Z",
+                                                          "latest":  {
+                                                                         "key":  "LAPTOP-03HO6PCU|Application|Application Error|32744",
+                                                                         "server":  "LAPTOP-03HO6PCU",
+                                                                         "log":  "Application",
+                                                                         "provider":  "Application Error",
+                                                                         "eventId":  1000,
+                                                                         "recordId":  32744,
+                                                                         "timestamp":  "2026-11-20T20:51:53.8279451Z",
+                                                                         "originalTimestamp":  "2026-11-20T15:51:53.8279451-05:00",
+                                                                         "originalTimeZone":  "Eastern Standard Time",
+                                                                         "severity":  "Error",
+                                                                         "message":  "Faulting application name: DivXUpdate.exe, version: 10.8.10.0, time stamp: 0x6303ce7f\r\nFaulting module name: Qt5Core.dll, version: 5.15.2.0, time stamp: 0x5fa4dd26\r\nException code: 0xc0000409\r\nFault offset: 0x0001f081\r\nFaulting process id: 0x4344\r\nFaulting application start time: 0x1DD7930F75FF80D\r\nFaulting application path: C:\\Program Files (x86)\\Common Files\\DivX Shared\\DivX Update\\DivXUpdate.exe\r\nFaulting module path: C:\\Program Files (x86)\\Common Files\\DivX Shared\\Qt5.6\\Qt5Core.dll\r\nReport Id: 82d96191-25d3-4468-b69d-c6594f871a4a\r\nFaulting package full name: \r\nFaulting package-relative application ID: ",
+                                                                         "simulated":  false
+                                                                     }
+                                                      },
+                                                      {
+                                                          "log":  "System",
+                                                          "provider":  "Microsoft-Windows-WindowsUpdateClient",
+                                                          "eventId":  20,
+                                                          "count":  1,
+                                                          "firstSeen":  "2026-11-20T15:29:29.9160742Z",
+                                                          "lastSeen":  "2026-11-20T15:29:29.9160742Z",
+                                                          "latest":  {
+                                                                         "key":  "LAPTOP-03HO6PCU|System|Microsoft-Windows-WindowsUpdateClient|34584",
+                                                                         "server":  "LAPTOP-03HO6PCU",
+                                                                         "log":  "System",
+                                                                         "provider":  "Microsoft-Windows-WindowsUpdateClient",
+                                                                         "eventId":  20,
+                                                                         "recordId":  34584,
+                                                                         "timestamp":  "2026-11-20T15:29:29.9160742Z",
+                                                                         "originalTimestamp":  "2026-11-20T10:29:29.9160742-05:00",
+                                                                         "originalTimeZone":  "Eastern Standard Time",
+                                                                         "severity":  "Error",
+                                                                         "message":  "Installation Failure: Windows failed to install the following update with error 0x80073D02: 9N9PHDT62W94-AD2F1837.myHP.",
+                                                                         "simulated":  false
+                                                                     }
+                                                      }
+                                                  ],
+                                       "events":  [
+                                                      {
+                                                          "key":  "LAPTOP-03HO6PCU|Application|.NET Runtime|32749",
+                                                          "server":  "LAPTOP-03HO6PCU",
+                                                          "log":  "Application",
+                                                          "provider":  ".NET Runtime",
+                                                          "eventId":  1022,
+                                                          "recordId":  32749,
+                                                          "timestamp":  "2026-11-20T21:38:33.4631861Z",
+                                                          "originalTimestamp":  "2026-11-20T16:38:33.4631861-05:00",
+                                                          "originalTimeZone":  "Eastern Standard Time",
+                                                          "severity":  "Error",
+                                                          "message":  ".NET Runtime version 4.0.30319.0 - There was a failure initializing profiling API attach infrastructure.  This process will not allow a profiler to attach.  HRESULT: 0x80004005.  Process ID (decimal): 2036.  Message ID: [0x2509].",
+                                                          "simulated":  false
+                                                      },
+                                                      {
+                                                          "key":  "LAPTOP-03HO6PCU|Application|Application Error|32744",
+                                                          "server":  "LAPTOP-03HO6PCU",
+                                                          "log":  "Application",
+                                                          "provider":  "Application Error",
+                                                          "eventId":  1000,
+                                                          "recordId":  32744,
+                                                          "timestamp":  "2026-11-20T20:51:53.8279451Z",
+                                                          "originalTimestamp":  "2026-11-20T15:51:53.8279451-05:00",
+                                                          "originalTimeZone":  "Eastern Standard Time",
+                                                          "severity":  "Error",
+                                                          "message":  "Faulting application name: DivXUpdate.exe, version: 10.8.10.0, time stamp: 0x6303ce7f\r\nFaulting module name: Qt5Core.dll, version: 5.15.2.0, time stamp: 0x5fa4dd26\r\nException code: 0xc0000409\r\nFault offset: 0x0001f081\r\nFaulting process id: 0x4344\r\nFaulting application start time: 0x1DD7930F75FF80D\r\nFaulting application path: C:\\Program Files (x86)\\Common Files\\DivX Shared\\DivX Update\\DivXUpdate.exe\r\nFaulting module path: C:\\Program Files (x86)\\Common Files\\DivX Shared\\Qt5.6\\Qt5Core.dll\r\nReport Id: 82d96191-25d3-4468-b69d-c6594f871a4a\r\nFaulting package full name: \r\nFaulting package-relative application ID: ",
+                                                          "simulated":  false
+                                                      },
+                                                      {
+                                                          "key":  "LAPTOP-03HO6PCU|System|Microsoft-Windows-WindowsUpdateClient|34584",
+                                                          "server":  "LAPTOP-03HO6PCU",
+                                                          "log":  "System",
+                                                          "provider":  "Microsoft-Windows-WindowsUpdateClient",
+                                                          "eventId":  20,
+                                                          "recordId":  34584,
+                                                          "timestamp":  "2026-11-20T15:29:29.9160742Z",
+                                                          "originalTimestamp":  "2026-11-20T10:29:29.9160742-05:00",
+                                                          "originalTimeZone":  "Eastern Standard Time",
+                                                          "severity":  "Error",
+                                                          "message":  "Installation Failure: Windows failed to install the following update with error 0x80073D02: 9N9PHDT62W94-AD2F1837.myHP.",
+                                                          "simulated":  false
+                                                      }
+                                                  ],
+                                       "searches":  [
+                                                        {
+                                                            "node":  "LAPTOP-03HO6PCU",
+                                                            "log":  "System",
+                                                            "status":  "Collected",
+                                                            "error":  null,
+                                                            "matchingAtLeast":  1,
+                                                            "truncated":  false
+                                                        },
+                                                        {
+                                                            "node":  "LAPTOP-03HO6PCU",
+                                                            "log":  "Application",
+                                                            "status":  "Collected",
+                                                            "error":  null,
+                                                            "matchingAtLeast":  29,
+                                                            "truncated":  false
+                                                        }
+                                                    ],
+                                       "truncated":  false,
+                                       "summaryLimit":  20000,
+                                       "start":  "2026-11-19T21:45:38.0177049Z",
+                                       "end":  "2026-11-20T21:45:48.2238136Z",
+                                       "collectedAt":  "2026-11-20T21:45:48.7642481Z",
+                                       "source":  "LAPTOP-03HO6PCU",
+                                       "targetTimeZone":  {
+                                                              "id":  "Eastern Standard Time",
+                                                              "displayName":  "(UTC-05:00) Eastern Time (US \u0026 Canada)",
+                                                              "standardName":  "Eastern Standard Time",
+                                                              "daylightName":  "Eastern Daylight Time",
+                                                              "supportsDaylightSavingTime":  true,
+                                                              "capturedAt":  "2026-11-20T21:45:48.7744569Z",
+                                                              "source":  "LAPTOP-03HO6PCU",
+                                                              "periods":  [
+                                                                              {
+                                                                                  "startUtc":  "2025-01-01T00:00:00.0000000Z",
+                                                                                  "endUtc":  "2025-03-09T07:00:00.0000000Z",
+                                                                                  "offsetMinutes":  -300,
+                                                                                  "daylight":  false
+                                                                              },
+                                                                              {
+                                                                                  "startUtc":  "2025-03-09T07:00:00.0000000Z",
+                                                                                  "endUtc":  "2025-11-02T06:00:00.0000000Z",
+                                                                                  "offsetMinutes":  -240,
+                                                                                  "daylight":  true
+                                                                              },
+                                                                              {
+                                                                                  "startUtc":  "2025-11-02T06:00:00.0000000Z",
+                                                                                  "endUtc":  "2026-03-08T07:00:00.0000000Z",
+                                                                                  "offsetMinutes":  -300,
+                                                                                  "daylight":  false
+                                                                              },
+                                                                              {
+                                                                                  "startUtc":  "2026-03-08T07:00:00.0000000Z",
+                                                                                  "endUtc":  "2026-11-01T06:00:00.0000000Z",
+                                                                                  "offsetMinutes":  -240,
+                                                                                  "daylight":  true
+                                                                              },
+                                                                              {
+                                                                                  "startUtc":  "2026-11-01T06:00:00.0000000Z",
+                                                                                  "endUtc":  "2027-03-14T07:00:00.0000000Z",
+                                                                                  "offsetMinutes":  -300,
+                                                                                  "daylight":  false
+                                                                              },
+                                                                              {
+                                                                                  "startUtc":  "2027-03-14T07:00:00.0000000Z",
+                                                                                  "endUtc":  "2027-11-07T06:00:00.0000000Z",
+                                                                                  "offsetMinutes":  -240,
+                                                                                  "daylight":  true
+                                                                              },
+                                                                              {
+                                                                                  "startUtc":  "2027-11-07T06:00:00.0000000Z",
+                                                                                  "endUtc":  "2028-01-01T00:00:00.0000000Z",
+                                                                                  "offsetMinutes":  -300,
+                                                                                  "daylight":  false
+                                                                              }
+                                                                          ]
+                                                          },
+                                       "errorsOnly":  true
+                                   },
+                   "Errors":  [
+
+                              ],
+                   "Coverage":  "Timestamped local samples; CPU and system-volume latency use counter deltas. Memory is the sample mean. Capacity covers mounted volumes, including folder mounts and network drives visible to this execution identity. Unmounted partitions are excluded. Short observations do not establish sustained conditions."
+               },
+    "submittedAt":  "2026-11-20T21:45:35.8362183Z"
+}

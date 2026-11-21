@@ -1,0 +1,1 @@
+{"version":"2.0.0","tasks":[{"label":"Ops Beacon PROD live","type":"shell","command":"powershell.exe","args":["-NoProfile","-ExecutionPolicy","Bypass","-File","${workspaceFolder}/Start-OpsBeacon.ps1"],"isBackground":true,"problemMatcher":[]}]}

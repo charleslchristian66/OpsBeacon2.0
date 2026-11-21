@@ -1,0 +1,4 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Ops Beacon live report checks</title></head><body><h1>Live assessment verification</h1><p>Deterministic checks use explicit fixtures only on this verification page. The live application never imports them.</p><pre id="results">Running…</pre><script type="module">
+import {runChecks} from './live-verification.js';
+try{const results=await runChecks();document.getElementById('results').textContent=JSON.stringify(results,null,2);document.title=results.every(r=>r.passed)?'PASS — Ops Beacon live checks':'FAIL — Ops Beacon live checks';}catch(e){document.getElementById('results').textContent=e.stack;document.title='FAIL — Ops Beacon live checks';}
+</script></body></html>

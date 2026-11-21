@@ -1,0 +1,56 @@
+{
+    "action":  "assess",
+    "events":  {
+                   "searchHours":  24,
+                   "beforeHours":  2,
+                   "afterHours":  2,
+                   "maxEvents":  5000,
+                   "summaryLimit":  20000
+               },
+    "rules":  {
+                  "observationMinutes":  15,
+                  "cpuWarning":  80,
+                  "cpuCritical":  95,
+                  "memoryWarning":  85,
+                  "memoryCritical":  95,
+                  "osAvailableWarningGB":  4,
+                  "osAvailableCriticalGB":  2,
+                  "grantsWarning":  1,
+                  "grantsCritical":  5,
+                  "pressureMinutes":  5,
+                  "diskFreeWarning":  15,
+                  "diskFreeCritical":  5,
+                  "storageWarningMs":  20,
+                  "storageCriticalMs":  50
+              },
+    "destinations":  [
+                         {
+                             "port":  8080,
+                             "host":  "127.0.0.1",
+                             "protocol":  "http"
+                         }
+                     ],
+    "connectivity":  {
+                         "probeCount":  4,
+                         "timeoutMs":  1000,
+                         "latencyThresholdMs":  170,
+                         "maxHops":  11,
+                         "maxConcurrent":  6,
+                         "destinationLimit":  20,
+                         "traceLimitSeconds":  15,
+                         "inspectionLimitSeconds":  60
+                     },
+    "options":  {
+                    "target":  "LAPTOP-03HO6PCU",
+                    "os":  "Windows",
+                    "profile":  "General Purpose Server",
+                    "sql":  false,
+                    "cluster":  false,
+                    "events":  true,
+                    "connectivity":  true,
+                    "execution":  "local",
+                    "sqlInstance":  "Auto",
+                    "observationSeconds":  5
+                },
+    "query":  null
+}

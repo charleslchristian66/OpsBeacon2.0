@@ -1,0 +1,113 @@
+{
+    "startedAt":  "2026-11-20T21:53:24.3967211Z",
+    "options":  {
+                    "target":  "LAPTOP-03HO6PCU",
+                    "os":  "Windows",
+                    "profile":  "General Purpose",
+                    "sql":  false,
+                    "cluster":  false,
+                    "events":  false,
+                    "connectivity":  false,
+                    "execution":  "local",
+                    "sqlInstance":  "Auto",
+                    "observationSeconds":  5
+                },
+    "action":  "events",
+    "id":  "0bd93184-bb4b-4561-a5ea-d0daac1cdaf3",
+    "completedAt":  "2026-11-20T21:53:26.6321684Z",
+    "state":  "Completed",
+    "target":  "LAPTOP-03HO6PCU",
+    "pid":  14648,
+    "result":  {
+                   "events":  [
+                                  {
+                                      "key":  "LAPTOP-03HO6PCU|System|Microsoft-Windows-WindowsUpdateClient|34584",
+                                      "server":  "LAPTOP-03HO6PCU",
+                                      "log":  "System",
+                                      "provider":  "Microsoft-Windows-WindowsUpdateClient",
+                                      "eventId":  20,
+                                      "recordId":  34584,
+                                      "timestamp":  "2026-11-20T15:29:29.9160742Z",
+                                      "originalTimestamp":  "2026-11-20T10:29:29.9160742-05:00",
+                                      "originalTimeZone":  "Eastern Standard Time",
+                                      "severity":  "Error",
+                                      "message":  "Installation Failure: Windows failed to install the following update with error 0x80073D02: 9N9PHDT62W94-AD2F1837.myHP.",
+                                      "simulated":  false
+                                  }
+                              ],
+                   "searches":  [
+                                    {
+                                        "node":  "LAPTOP-03HO6PCU",
+                                        "log":  "System",
+                                        "status":  "Collected",
+                                        "error":  null,
+                                        "matchingAtLeast":  1,
+                                        "truncated":  false
+                                    }
+                                ],
+                   "truncated":  false,
+                   "totalMatchingAtLeast":  1,
+                   "start":  "2026-11-19T21:45:38.0177049Z",
+                   "end":  "2026-11-20T21:45:48.2238136Z",
+                   "collectedAt":  "2026-11-20T21:53:26.0095301Z",
+                   "source":  "LAPTOP-03HO6PCU",
+                   "targetTimeZone":  {
+                                          "id":  "Eastern Standard Time",
+                                          "displayName":  "(UTC-05:00) Eastern Time (US \u0026 Canada)",
+                                          "standardName":  "Eastern Standard Time",
+                                          "daylightName":  "Eastern Daylight Time",
+                                          "supportsDaylightSavingTime":  true,
+                                          "capturedAt":  "2026-11-20T21:53:26.2320340Z",
+                                          "source":  "LAPTOP-03HO6PCU",
+                                          "periods":  [
+                                                          {
+                                                              "startUtc":  "2025-01-01T00:00:00.0000000Z",
+                                                              "endUtc":  "2025-03-09T07:00:00.0000000Z",
+                                                              "offsetMinutes":  -300,
+                                                              "daylight":  false
+                                                          },
+                                                          {
+                                                              "startUtc":  "2025-03-09T07:00:00.0000000Z",
+                                                              "endUtc":  "2025-11-02T06:00:00.0000000Z",
+                                                              "offsetMinutes":  -240,
+                                                              "daylight":  true
+                                                          },
+                                                          {
+                                                              "startUtc":  "2025-11-02T06:00:00.0000000Z",
+                                                              "endUtc":  "2026-03-08T07:00:00.0000000Z",
+                                                              "offsetMinutes":  -300,
+                                                              "daylight":  false
+                                                          },
+                                                          {
+                                                              "startUtc":  "2026-03-08T07:00:00.0000000Z",
+                                                              "endUtc":  "2026-11-01T06:00:00.0000000Z",
+                                                              "offsetMinutes":  -240,
+                                                              "daylight":  true
+                                                          },
+                                                          {
+                                                              "startUtc":  "2026-11-01T06:00:00.0000000Z",
+                                                              "endUtc":  "2027-03-14T07:00:00.0000000Z",
+                                                              "offsetMinutes":  -300,
+                                                              "daylight":  false
+                                                          },
+                                                          {
+                                                              "startUtc":  "2027-03-14T07:00:00.0000000Z",
+                                                              "endUtc":  "2027-11-07T06:00:00.0000000Z",
+                                                              "offsetMinutes":  -240,
+                                                              "daylight":  true
+                                                          },
+                                                          {
+                                                              "startUtc":  "2027-11-07T06:00:00.0000000Z",
+                                                              "endUtc":  "2028-01-01T00:00:00.0000000Z",
+                                                              "offsetMinutes":  -300,
+                                                              "daylight":  false
+                                                          }
+                                                      ]
+                                      },
+                   "eventId":  20,
+                   "provider":  "Microsoft-Windows-WindowsUpdateClient",
+                   "errorsOnly":  true,
+                   "maxEvents":  5000
+               },
+    "submittedAt":  "2026-11-20T21:53:21.2044350Z"
+}
